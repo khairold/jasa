@@ -1,0 +1,54 @@
+{
+  "name": "gatsby-starter-default",
+  "private": true,
+  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "version": "0.1.0",
+  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "dependencies": {
+    "@emotion/core": "^10.0.17",
+    "@mdx-js/mdx": "^1.4.5",
+    "@mdx-js/react": "^1.4.5",
+    "formik": "^1.5.8",
+    "gatsby": "^2.15.15",
+    "gatsby-image": "^2.2.19",
+    "gatsby-plugin-manifest": "^2.2.16",
+    "gatsby-plugin-mdx": "^1.0.41",
+    "gatsby-plugin-modal-routing": "^1.0.2",
+    "gatsby-plugin-offline": "^2.2.10",
+    "gatsby-plugin-react-helmet": "^3.1.7",
+    "gatsby-plugin-sharp": "^2.2.22",
+    "gatsby-plugin-smoothscroll": "^1.0.3",
+    "gatsby-plugin-theme-ui": "^0.2.41",
+    "gatsby-source-filesystem": "^2.1.22",
+    "gatsby-transformer-sharp": "^2.2.14",
+    "prop-types": "^15.7.2",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-helmet": "^5.2.1",
+    "react-intersection-observer": "^8.24.2",
+    "theme-ui": "^0.2.42",
+    "typeface-roboto": "0.0.75"
+  },
+  "devDependencies": {
+    "prettier": "^1.18.2"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build --prefix-paths",
+    "develop": "gatsby develop -H 0.0.0.0",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve -H 0.0.0.0 --prefix-paths",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  }
+}
