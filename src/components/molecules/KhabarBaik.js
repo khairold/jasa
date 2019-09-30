@@ -2,7 +2,7 @@
 import { jsx } from "theme-ui"
 
 export default () => (
-  <div
+  <span
     sx={{
       py: 1,
       px: 2,
@@ -10,8 +10,9 @@ export default () => (
       bg: "orange",
       fontSize: 2,
       letterSpacing: 3,
+      display: "inline-block",
     }}
   >
     #khabarbaik
-  </div>
+  </span>
 )

@@ -15,6 +15,7 @@ export default {
     faintBlue: "hsl(220, 88%, 88%)",
     darkBlue: "hsl(212, 88%, 23%)",
     faintOrange: "hsl(36, 100%, 88%)",
+    dGrey: "rgb(236, 236, 236)",
   },
   fontWeights: {
     thin: 100,
@@ -47,7 +48,7 @@ export default {
       fontSize: 1,
       fontFamily: "body",
       fontWeight: "body",
-      color: "lightGrey",
+      color: "grey",
       mt: 1,
       mx: 4,
       mb: 3,
@@ -60,7 +61,7 @@ export default {
       fontSize: 1,
       fontFamily: "body",
       fontWeight: "body",
-      color: "lightGrey",
+      color: "grey",
     },
     li: {
       mx: 3,

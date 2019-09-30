@@ -2,13 +2,18 @@
 import { jsx } from "theme-ui"
 
 export default () => (
-  <div sx={{ width: 100, bg: "white", py: 1 }}>
+  <div
+    sx={{
+      width: 80,
+      bg: "white",
+      py: 1,
+      mr: 3,
+      borderRadius: 50,
+    }}
+  >
     <div
       sx={{
-        // width: 100,
         height: "100%",
-        bg: "white",
-        mr: 3,
         backgroundPosition: "center",
         backgroundSize: "contain",
         backgroundRepeat: "no-repeat",

@@ -3,14 +3,13 @@ import React from "react"
 import { jsx } from "theme-ui"
 
 export default () => (
-  <>
+  <div sx={{ pl: 3, pt: 2, pb: 3 }}>
     <div
       sx={{
         fontWeight: 300,
-        fontSize: 3,
+        fontSize: [3, 4],
         mt: 2,
         color: "hsl(220, 88%, 88%)",
-        // color: "hsl(216, 88%, 75%)",
       }}
     >
       Eksklusif untuk Penjawat Awam
@@ -18,16 +17,14 @@ export default () => (
     <div
       sx={{
         lineHeight: 1.2,
-        fontSize: 0,
+        fontSize: [0, 1],
         pt: 0,
         pb: 3,
         letterSpacing: 0.8,
-        // fontWeight: 300,
-        // fontWeight: "light",
         color: "hsl(216, 88%, 75%)",
       }}
     >
       POLIS · TENTERA · GURU · KAKITANGAN KERAJAAN
     </div>
-  </>
+  </div>
 )

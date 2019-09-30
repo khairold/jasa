@@ -6,16 +6,18 @@ import Header from "../components/organisms/Header"
 import Card from "../components/organisms/Card"
 import HorizontalMenu from "../components/molecules/HorzontalMenu"
 import StickyCta from "../components/molecules/StickyCta"
+import Terma from "../components/organisms/Terma"
+import Eksklusif from "../components/organisms/Eksklusif"
+import Langkah from "../components/organisms/Langkah"
+import Maksud from "../components/organisms/Maksud"
 
 import Syarat from "../content/syarat"
 import Liputan from "../content/liputan.mdx"
 import Kelayakan from "../content/kelayakan.mdx"
 import Mnp from "../content/mnp.mdx"
 
-import { Link } from "gatsby"
-
 export default props => {
-  const [liputan, liputanView] = useInView({ threshold: 0.7 })
+  const [liputan, liputanView] = useInView({ threshold: 0 })
   const [kelayakan, kelayakanView] = useInView({ threshold: 1 })
   const [mnp, mnpView] = useInView({ threshold: 1 })
   const [syarat, syaratView] = useInView({ threshold: 1 })
@@ -24,13 +26,18 @@ export default props => {
     <div
       sx={{
         fontFamily: "body",
-        maxWidth: 800,
         m: "auto",
+        color: "text",
+        bg: "white",
+        maxWidth: 800,
+        boxShadow: "0px 0px 10px hsl(0, 0%, 70%)",
       }}
     >
       <div>
         <Header />
+
         <Card />
+
         <div>
           <HorizontalMenu
             liputanView={liputanView}
@@ -38,34 +45,31 @@ export default props => {
             mnpView={mnpView}
             syaratView={syaratView}
           />
-          <div ref={liputan}>
-            <Liputan />
-            <Link to="/liputan">
-              <div
-                sx={{
-                  fontFamily: "body",
-                  fontWeight: 500,
-                  fontSize: "2",
-                  color: "orange",
-                  ml: 4,
-                  my: 3,
-                  letterSpacing: 0.5,
-                }}
-              >
-                Periksa Liputan >
-              </div>
-            </Link>
-          </div>
+          <Eksklusif />
+
           <div>
-            <div ref={kelayakan}>
+            <div ref={liputan} sx={{ maxWidth: 640, m: "auto" }}>
+              <Liputan />
+            </div>
+
+            <div ref={kelayakan} sx={{ maxWidth: 640, m: "auto" }}>
               <Kelayakan />
             </div>
-            <div ref={mnp}>
+
+            <Maksud />
+
+            <div ref={mnp} sx={{ maxWidth: 640, m: "auto" }}>
               <Mnp />
             </div>
-            <div ref={syarat}>
+
+            <Langkah />
+
+            <div ref={syarat} sx={{ maxWidth: 640, m: "auto" }}>
               <Syarat />
             </div>
+
+            <Terma />
+
             <StickyCta />
           </div>
         </div>
