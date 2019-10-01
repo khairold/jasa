@@ -53,6 +53,7 @@ export default () => (
               bg: "orange",
               color: "white",
               borderRadius: 4,
+              cursor: "pointer",
             }}
           >
             <div>

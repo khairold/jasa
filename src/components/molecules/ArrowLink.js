@@ -8,11 +8,11 @@ export default ({ children, link }) => (
     <div
       sx={{
         fontFamily: "body",
-        fontWeight: 500,
-        fontSize: "2",
+        fontWeight: [600, 700],
+        fontSize: [2, 3],
         color: "orange",
-        ml: 4,
-        my: 3,
+        ml: [4, 5],
+        mt: [3, 4],
         letterSpacing: 0.5,
         // textDecoration: "underline",
       }}

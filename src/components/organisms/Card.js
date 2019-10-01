@@ -5,7 +5,6 @@ const KelebihanListItem = ({ children }) => (
   <li
     sx={{
       my: 1,
-      // lineHeight: 1.2,
       display: "flex",
       color: "text",
       fontWeight: 500,
@@ -16,7 +15,7 @@ const KelebihanListItem = ({ children }) => (
     >
       ✓
     </span>
-    <div sx={{ fontSize: 1 }}>{children}</div>
+    <div sx={{ fontSize: [1, 2, 2] }}>{children}</div>
   </li>
 )
 
@@ -25,7 +24,7 @@ const Price = () => (
     <div
       sx={{
         textAlign: "",
-        fontSize: 3,
+        fontSize: [3, 4, 5],
         color: "blue",
         fontWeight: 900,
         display: "flex",
@@ -34,20 +33,20 @@ const Price = () => (
     >
       Pek Jasa
       <img
-        sx={{ ml: 1, height: 18 }}
+        sx={{ ml: 1, height: [18, 22, 26] }}
         src="https://unifi.com.my/lsds/assets/images/common/makeover/unifi-logo.svg"
       />
     </div>
     <div
       sx={{
-        fontSize: 0,
+        fontSize: [0, 1, 1],
         color: "lightGrey",
         mb: 3,
       }}
     >
       Pelan pasca bayar unifi Mobile™
     </div>
-    <div sx={{ py: 2 }}>
+    <div sx={{ py: [2, 3] }}>
       <span
         sx={{
           color: "blue",
@@ -60,7 +59,7 @@ const Price = () => (
       </span>
       <span
         sx={{
-          fontSize: 7,
+          fontSize: [7],
           fontWeight: "bold",
           color: "blue",
         }}
@@ -90,9 +89,9 @@ const CardButton = () => (
         textDecoration: "none",
         boxSizing: "border-box",
         m: 0,
-        ml: 4,
+        ml: [4, 5],
         px: 3,
-        py: 3,
+        py: [3],
         // boxShadow: "-3px 0px 6px hsl(0, 0%, 70%)",
         boxShadow: "-3px 0px 2px hsl(0, 0%, 70%)",
         border: 0,
@@ -101,10 +100,11 @@ const CardButton = () => (
         color: "white",
         borderRadius: 4,
         width: "100%",
+        cursor: "pointer",
       }}
     >
-      <div sx={{ fontWeight: "bold", fontSize: 2 }}>DAFTAR ONLINE ></div>
-      <div sx={{ fontSize: 0, lineHeight: 1, color: "faintOrange" }}>
+      <div sx={{ fontWeight: "bold", fontSize: [2, 3] }}>DAFTAR ONLINE ></div>
+      <div sx={{ fontSize: [0, 1], lineHeight: 1, color: "faintOrange" }}>
         Kad SIM dihantar dalam masa 2 hari
       </div>
     </button>
@@ -113,7 +113,7 @@ const CardButton = () => (
 
 const CardList = () => (
   <ul
-    sx={{ fontSize: 1, pl: 3, py: 3, m: 0, mt: 0 }}
+    sx={{ fontSize: 1, pl: 3, py: [3, 4], m: 0, mt: 0 }}
     style={{ listStyleType: "none" }}
   >
     <KelebihanListItem>
@@ -159,8 +159,6 @@ export default () => (
       sx={{
         bg: "black",
         opacity: 0.88,
-        // bg: "dGrey",
-        // opacity: 0.9,
         position: "absolute",
         top: 0,
         bottom: 0,
@@ -171,18 +169,14 @@ export default () => (
     <div
       sx={{
         position: "relative",
-        top: -30,
+        top: [-30, -42],
         pt: 3,
         pb: 3,
         bg: "white",
-        // boxShadow: "0px 1px 1px hsl(0, 0%, 70%)",
-        maxWidth: 300,
+        maxWidth: [300, 320],
         boxSizing: "border-box",
         width: "75%",
         borderRadius: 4,
-        // borderTopColor: "orange",
-        // borderTopStyle: "solid",
-        // borderTopWidth: 5,
       }}
     >
       <Price />

@@ -3,11 +3,11 @@ import React from "react"
 import { jsx } from "theme-ui"
 
 export default () => (
-  <div sx={{ pl: 3, pt: 2, pb: 3 }}>
+  <div sx={{ pl: 3, pt: [2, 3], pb: [3, 4] }}>
     <div
       sx={{
         fontWeight: 300,
-        fontSize: [3, 4],
+        fontSize: [3, 4, 5],
         mt: 2,
         color: "hsl(220, 88%, 88%)",
       }}
@@ -17,7 +17,7 @@ export default () => (
     <div
       sx={{
         lineHeight: 1.2,
-        fontSize: [0, 1],
+        fontSize: [0, 1, 2],
         pt: 0,
         pb: 3,
         letterSpacing: 0.8,

@@ -18,7 +18,7 @@ export default () => (
       >
         Pek Jasa ialah tawaran eksklusif yang direka khas untuk penjawat awam.
       </div>
-      <div sx={{ fontSize: [1, 1, 2] }}>
+      <div sx={{ fontSize: [2] }}>
         Daftarlah dengan unifi Mobile™ RM59/sebulan (RRP:{" "}
         <span style={{ textDecoration: "line-through" }}>RM99</span>) sekarang
         dan nikmati data, panggilan & SMS tanpa had. Yang seronoknya, tanpa

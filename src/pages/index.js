@@ -29,7 +29,6 @@ export default props => {
         m: "auto",
         color: "text",
         bg: "white",
-        maxWidth: 800,
         boxShadow: "0px 0px 10px hsl(0, 0%, 70%)",
       }}
     >
@@ -48,23 +47,63 @@ export default props => {
           <Eksklusif />
 
           <div>
-            <div ref={liputan} sx={{ maxWidth: 640, m: "auto" }}>
+            <div
+              ref={liputan}
+              sx={{
+                maxWidth: 640,
+                m: "auto",
+                borderLeftColor: "blue",
+                borderLeftStyle: "solid",
+                borderLeftWidth: [1, 2],
+                my: [3, 4, 5],
+              }}
+            >
               <Liputan />
             </div>
 
-            <div ref={kelayakan} sx={{ maxWidth: 640, m: "auto" }}>
+            <div
+              ref={kelayakan}
+              sx={{
+                maxWidth: 640,
+                m: "auto",
+                borderLeftColor: "blue",
+                borderLeftStyle: "solid",
+                borderLeftWidth: [1, 2],
+                my: [3, 4, 5],
+              }}
+            >
               <Kelayakan />
             </div>
 
             <Maksud />
 
-            <div ref={mnp} sx={{ maxWidth: 640, m: "auto" }}>
+            <div
+              ref={mnp}
+              sx={{
+                maxWidth: 640,
+                m: "auto",
+                borderLeftColor: "blue",
+                borderLeftStyle: "solid",
+                borderLeftWidth: [1, 2],
+                my: [3, 4, 5],
+              }}
+            >
               <Mnp />
             </div>
 
             <Langkah />
 
-            <div ref={syarat} sx={{ maxWidth: 640, m: "auto" }}>
+            <div
+              ref={syarat}
+              sx={{
+                maxWidth: 640,
+                m: "auto",
+                borderLeftColor: "blue",
+                borderLeftStyle: "solid",
+                borderLeftWidth: [1, 2],
+                my: [3, 4, 5],
+              }}
+            >
               <Syarat />
             </div>
 

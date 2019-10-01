@@ -1,6 +1,7 @@
 a {
   color: blue;
   text-decoration: none; /* no underline */
+  cursor: pointer;
 }
 
 html,
