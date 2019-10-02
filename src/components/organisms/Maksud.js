@@ -6,10 +6,10 @@ export default () => (
     sx={{
       py: 5,
       px: 4,
-      bg: "dGrey",
+      bg: "backGroundGrey",
     }}
   >
-    <div sx={{ maxWidth: 960, m: "auto" }}>
+    <div sx={{ maxWidth: 960, m: "auto", width: "100%" }}>
       <div
         sx={{
           fontSize: [4, 5],
@@ -22,10 +22,29 @@ export default () => (
         hidup tanpa sempadan dengan servis pasca bayar terbaik yang direka khas
         untuk anda!
       </div>
-      <div sx={{ py: 4, fontSize: [2, 3] }}>
-        <div sx={{ display: "flex", alignItems: "flex-start", mb: 3 }}>
+      <div
+        sx={{
+          mt: 3,
+          py: 4,
+          fontSize: [2, 3],
+          display: "flex",
+          flexWrap: "wrap",
+          width: "100%",
+          bg: "white",
+        }}
+      >
+        <div
+          sx={{
+            display: "flex",
+            alignItems: "flex-start",
+            mb: 3,
+            width: ["100%", "50%"],
+            px: [0, 2],
+            boxSizing: "border-box",
+          }}
+        >
           <img
-            sx={{ width: [50, 60], display: "inline-block", mr: 2 }}
+            sx={{ width: [50, 70], display: "inline-block", mr: 2 }}
             src="https://unifi.com.my/lsds/assets/personal/home/pek-jasa/img/pekjasa/no-contracts.svg"
           />
 
@@ -34,9 +53,18 @@ export default () => (
             tidak terikat dengan sebarang kontrak
           </div>
         </div>
-        <div sx={{ display: "flex", alignItems: "flex-start", mb: 3 }}>
+        <div
+          sx={{
+            display: "flex",
+            alignItems: "flex-start",
+            mb: 3,
+            width: ["100%", "50%"],
+            px: [0, 2],
+            boxSizing: "border-box",
+          }}
+        >
           <img
-            sx={{ width: [50, 60], display: "inline-block", mr: 2 }}
+            sx={{ width: [50, 70], display: "inline-block", mr: 2 }}
             src="https://unifi.com.my/lsds/assets/personal/home/pek-jasa/img/pekjasa/free-delivery.svg"
           />
 
@@ -45,9 +73,18 @@ export default () => (
             hantar ke rumah anda tanpa sebarang bayaran
           </div>
         </div>
-        <div sx={{ display: "flex", alignItems: "flex-start", mb: 3 }}>
+        <div
+          sx={{
+            display: "flex",
+            alignItems: "flex-start",
+            mb: 3,
+            width: ["100%", "50%"],
+            px: [0, 2],
+            boxSizing: "border-box",
+          }}
+        >
           <img
-            sx={{ width: [50, 60], display: "inline-block", mr: 2 }}
+            sx={{ width: [50, 70], display: "inline-block", mr: 2 }}
             src="https://unifi.com.my/lsds/assets/personal/home/pek-jasa/img/pekjasa/nationwide-coverage.svg"
           />
 
@@ -56,9 +93,18 @@ export default () => (
             sesiapa sahaja di mana-mana sahaja
           </div>
         </div>
-        <div sx={{ display: "flex", alignItems: "flex-start", mb: 3 }}>
+        <div
+          sx={{
+            display: "flex",
+            alignItems: "flex-start",
+            mb: 3,
+            width: ["100%", "50%"],
+            px: [0, 2],
+            boxSizing: "border-box",
+          }}
+        >
           <img
-            sx={{ width: [50, 60], display: "inline-block", mr: 2 }}
+            sx={{ width: [50, 70], display: "inline-block", mr: 2 }}
             src="https://unifi.com.my/lsds/assets/personal/home/pek-jasa/img/pekjasa/fast-registration.svg"
           />
 

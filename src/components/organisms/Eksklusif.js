@@ -5,7 +5,7 @@ import UnifiLogo from "../molecules/UnifiLogo"
 import PenjawatAwam from "../molecules/PenjawatAwam"
 
 export default () => (
-  <div sx={{ bg: "dGrey", color: "text", py: 5, px: 4 }}>
+  <div sx={{ bg: "backGroundGrey", color: "text", py: [5, 6], px: 4 }}>
     <div sx={{ maxWidth: 960, m: "auto" }}>
       <div sx={{}}>
         <div
