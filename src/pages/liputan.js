@@ -17,9 +17,11 @@ export default function Iframe() {
       <div
         sx={{
           width: "100%",
-          height: 620,
+          maxWidth: 960,
+          height: "100vh",
           position: "relative",
           top: -30,
+          m: "auto",
         }}
         dangerouslySetInnerHTML={{ __html: iframe }}
       />
@@ -29,20 +31,23 @@ export default function Iframe() {
           py: 3,
           position: "absolute",
           top: 0,
+          width: "100%",
         }}
       >
-        <span
-          onClick={() => window && window.history && window.history.back()}
-          sx={{
-            fontFamily: "body",
-            fontSize: 1,
-            fontWeight: 600,
-            color: "lightGrey",
-            cursor: "pointer",
-          }}
-        >
-          {"<"} Pek Jasa
-        </span>
+        <div sx={{ maxWidth: 960, m: "auto" }}>
+          <span
+            onClick={() => window && window.history && window.history.back()}
+            sx={{
+              fontFamily: "body",
+              fontSize: [1, 2, 3],
+              fontWeight: 600,
+              color: "lightGrey",
+              cursor: "pointer",
+            }}
+          >
+            {"<"} Pek Jasa
+          </span>
+        </div>
       </div>
     </div>
   )

@@ -114,7 +114,7 @@ export default props => {
 
             <Terma />
 
-            <StickyCta />
+            {!cardView && <StickyCta />}
           </div>
         </div>
       </div>

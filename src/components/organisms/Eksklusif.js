@@ -7,10 +7,10 @@ import PenjawatAwam from "../molecules/PenjawatAwam"
 export default () => (
   <div sx={{ bg: "dGrey", color: "text", py: 5, px: 4 }}>
     <div sx={{ maxWidth: 960, m: "auto" }}>
-      <div sx={{ maxWidth: 640 }}>
+      <div sx={{}}>
         <div
           sx={{
-            fontSize: [4, 5],
+            fontSize: [4, 5, 6],
             fontWeight: 600,
             mb: 3,
             lineHeight: 1,
@@ -19,7 +19,7 @@ export default () => (
         >
           Pek Jasa ialah tawaran eksklusif yang direka khas untuk penjawat awam.
         </div>
-        <div sx={{ fontSize: [2, 3] }}>
+        <div sx={{ fontSize: [2, 3, 4] }}>
           Daftarlah dengan unifi Mobile™ RM59/sebulan (RRP:{" "}
           <span style={{ textDecoration: "line-through" }}>RM99</span>) sekarang
           dan nikmati data, panggilan & SMS tanpa had. Yang seronoknya, tanpa

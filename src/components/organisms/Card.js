@@ -1,4 +1,5 @@
 /** @jsx jsx */
+import React, { useState } from "react"
 import { jsx } from "theme-ui"
 import KhabarBaik from "../molecules/KhabarBaik"
 import UnifiLogo from "../molecules/UnifiLogo"
@@ -114,6 +115,62 @@ const CardButton = () => (
   </div>
 )
 
+const MoreItems = () => {
+  const [lanjut, setLanjut] = useState(true)
+  return (
+    <>
+      {lanjut ? (
+        <div
+          sx={{
+            mt: 1,
+            ml: 3,
+            mb: 2,
+            fontSize: [1],
+            color: "blue",
+            cursor: "pointer",
+          }}
+          onClick={() => setLanjut(false)}
+        >
+          ...lebih lanjut
+        </div>
+      ) : (
+        <>
+          <KelebihanListItem>
+            Hotspot 10GB;{" "}
+            <span sx={{ color: "lightGrey", fontSize: 1, fontWeight: 400 }}>
+              RM8 untuk setiap 500MB seterusnya
+            </span>
+          </KelebihanListItem>
+          <KelebihanListItem>
+            <a
+              target="_blank"
+              sx={{ color: "text", textDecoration: "underline" }}
+              href="https://unifi.com.my/personal/mobile/roaming"
+            >
+              Roaming RM38
+              <span sx={{ color: "lightGrey", fontSize: 1, fontWeight: 400 }}>
+                /sehari
+              </span>
+            </a>
+          </KelebihanListItem>
+          <KelebihanListItem>
+            <a
+              target="_blank"
+              sx={{ color: "text", textDecoration: "underline" }}
+              href="https://unifi.com.my/personal/mobile/international-direct-dial"
+            >
+              Kadar IDD{" "}
+              <span sx={{ color: "lightGrey", fontSize: 1, fontWeight: 400 }}>
+                yang berpatutan
+              </span>
+            </a>
+          </KelebihanListItem>
+        </>
+      )}
+    </>
+  )
+}
+
 const CardList = () => (
   <ul
     sx={{ fontSize: 1, pl: 3, py: [3, 4], m: 0, mt: 0 }}
@@ -139,6 +196,7 @@ const CardList = () => (
         batal bila-bila masa
       </span>
     </KelebihanListItem>
+    <MoreItems />
   </ul>
 )
 
@@ -156,7 +214,8 @@ export default () => (
     <div
       sx={{
         bg: "black",
-        opacity: [0.88, 0.6],
+        // opacity: [0.88, 0.6],
+        opacity: 0.6,
         position: ["absolute"],
         top: 0,
         bottom: 0,

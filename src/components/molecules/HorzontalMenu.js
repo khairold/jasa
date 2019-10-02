@@ -43,6 +43,7 @@ export default ({
 }) => (
   <div
     sx={{
+      px: 3,
       py: [3, 1],
       overflow: "auto",
       position: "sticky",
