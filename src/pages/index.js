@@ -16,11 +16,14 @@ import Liputan from "../content/liputan.mdx"
 import Kelayakan from "../content/kelayakan.mdx"
 import Mnp from "../content/mnp.mdx"
 
+const maxWidth = 960
+
 export default props => {
   const [liputan, liputanView] = useInView({ threshold: 0 })
   const [kelayakan, kelayakanView] = useInView({ threshold: 1 })
   const [mnp, mnpView] = useInView({ threshold: 1 })
   const [syarat, syaratView] = useInView({ threshold: 1 })
+  const [card, cardView] = useInView({ threshold: 0.1 })
 
   return (
     <div
@@ -34,8 +37,9 @@ export default props => {
     >
       <div>
         <Header />
-
-        <Card />
+        <div ref={card}>
+          <Card />
+        </div>
 
         <div>
           <HorizontalMenu
@@ -43,6 +47,7 @@ export default props => {
             kelayakanView={kelayakanView}
             mnpView={mnpView}
             syaratView={syaratView}
+            cardView={cardView}
           />
           <Eksklusif />
 
@@ -50,8 +55,8 @@ export default props => {
             <div
               ref={liputan}
               sx={{
-                maxWidth: 640,
-                m: "auto",
+                maxWidth: maxWidth,
+                mx: "auto",
                 borderLeftColor: "blue",
                 borderLeftStyle: "solid",
                 borderLeftWidth: [1, 2],
@@ -64,7 +69,7 @@ export default props => {
             <div
               ref={kelayakan}
               sx={{
-                maxWidth: 640,
+                maxWidth: maxWidth,
                 m: "auto",
                 borderLeftColor: "blue",
                 borderLeftStyle: "solid",
@@ -80,7 +85,7 @@ export default props => {
             <div
               ref={mnp}
               sx={{
-                maxWidth: 640,
+                maxWidth: maxWidth,
                 m: "auto",
                 borderLeftColor: "blue",
                 borderLeftStyle: "solid",
@@ -96,7 +101,7 @@ export default props => {
             <div
               ref={syarat}
               sx={{
-                maxWidth: 640,
+                maxWidth: maxWidth,
                 m: "auto",
                 borderLeftColor: "blue",
                 borderLeftStyle: "solid",

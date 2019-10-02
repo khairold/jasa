@@ -11,8 +11,9 @@ export default props => (
       pb: 3,
       bg: "blue",
       color: "white",
-      textAlign: "center",
+      // textAlign: "center",
       fontFamily: "body",
+      display: ["static", "none"],
     }}
   >
     <div sx={{ maxWidth: 960, m: "auto" }}>

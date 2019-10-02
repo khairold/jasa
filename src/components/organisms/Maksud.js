@@ -7,15 +7,12 @@ export default () => (
       py: 5,
       px: 4,
       bg: "dGrey",
-      // color: "black",
-      fontSize: [2],
-      // boxShadow: "0px 0px 20px hsl(0, 0%, 70%)",
     }}
   >
-    <div sx={{ maxWidth: 640, m: "auto" }}>
+    <div sx={{ maxWidth: 960, m: "auto" }}>
       <div
         sx={{
-          fontSize: [3, 4],
+          fontSize: [4, 5],
           fontWeight: 600,
           lineHeight: 1,
           color: "orange",
@@ -25,7 +22,7 @@ export default () => (
         hidup tanpa sempadan dengan servis pasca bayar terbaik yang direka khas
         untuk anda!
       </div>
-      <div sx={{ py: 4 }}>
+      <div sx={{ py: 4, fontSize: [2, 3] }}>
         <div sx={{ display: "flex", alignItems: "flex-start", mb: 3 }}>
           <img
             sx={{ width: [50, 60], display: "inline-block", mr: 2 }}

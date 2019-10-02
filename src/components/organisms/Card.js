@@ -1,5 +1,8 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
+import KhabarBaik from "../molecules/KhabarBaik"
+import UnifiLogo from "../molecules/UnifiLogo"
+import PenjawatAwam from "../molecules/PenjawatAwam"
 
 const KelebihanListItem = ({ children }) => (
   <li
@@ -89,7 +92,7 @@ const CardButton = () => (
         textDecoration: "none",
         boxSizing: "border-box",
         m: 0,
-        ml: [4, 5],
+        ml: [4, 3],
         px: 3,
         py: [3],
         // boxShadow: "-3px 0px 6px hsl(0, 0%, 70%)",
@@ -142,48 +145,73 @@ const CardList = () => (
 export default () => (
   <div
     sx={{
-      bg: "dGrey",
-      display: "flex",
-      width: "100%",
-      justifyContent: "center",
-      alignItems: "center",
-      flexDirection: "column",
       position: "relative",
       backgroundPosition: "center",
       backgroundSize: "cover",
       backgroundRepeat: "no-repeat",
-      backgroundImage: `url("https://unifi.com.my/lsds/assets/personal/home/pek-jasa/img/pekjasa/campaign-masthead-m.jpg")`,
+      // backgroundImage: `url("https://unifi.com.my/lsds/assets/personal/home/pek-jasa/img/pekjasa/campaign-masthead.jpg")`,
+      backgroundImage: `url("/images/campaign-masthead.jpg")`,
     }}
   >
     <div
       sx={{
         bg: "black",
-        opacity: 0.88,
-        position: "absolute",
+        opacity: [0.88, 0.6],
+        position: ["absolute"],
         top: 0,
         bottom: 0,
         left: 0,
         right: 0,
+        display: ["block", "block"],
       }}
     />
     <div
       sx={{
+        py: [0, 5],
+        display: ["flex", "flex"],
+        width: "100%",
+        maxWidth: 960,
+        m: "auto",
+        justifyContent: ["center", "space-between"],
+        alignItems: ["center", "flex-end"],
         position: "relative",
-        top: [-30, -42],
-        pt: 3,
-        pb: 3,
-        bg: "white",
-        maxWidth: [300, 320],
-        boxSizing: "border-box",
-        width: "75%",
-        borderRadius: 4,
       }}
     >
-      <Price />
-      <CardList />
-      <a href="https://unifi.com.my/unifi-en/ijoin/slof-jasa.page">
-        <CardButton />
-      </a>
+      <div sx={{ display: ["none", "block"] }}>
+        <KhabarBaik />
+        <div
+          sx={{
+            position: ["static", "relative"],
+            left: 20,
+            bg: "blue",
+            color: "white",
+            fontFamily: "body",
+            px: 3,
+          }}
+        >
+          <PenjawatAwam />
+        </div>
+      </div>
+      <div
+        sx={{
+          position: ["relative", "sticky"],
+          top: [-30, -42],
+          pt: 3,
+          pb: 3,
+          bg: "white",
+          maxWidth: [300, 320],
+          boxSizing: "border-box",
+          width: "75%",
+          borderRadius: 4,
+          mr: [0, 3],
+        }}
+      >
+        <Price />
+        <CardList />
+        <a href="https://unifi.com.my/unifi-en/ijoin/slof-jasa.page">
+          <CardButton />
+        </a>
+      </div>
     </div>
   </div>
 )

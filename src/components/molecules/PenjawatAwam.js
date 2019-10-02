@@ -3,13 +3,13 @@ import React from "react"
 import { jsx } from "theme-ui"
 
 export default () => (
-  <div sx={{ pl: 3, pt: [2, 3], pb: [3, 4] }}>
+  <div sx={{ pl: 3, pt: [2, 1], pb: [3, 1] }}>
     <div
       sx={{
-        fontWeight: 300,
+        fontWeight: [300, 700],
         fontSize: [3, 4, 5],
         mt: 2,
-        color: "hsl(220, 88%, 88%)",
+        color: ["hsl(220, 88%, 88%)", "white"],
       }}
     >
       Eksklusif untuk Penjawat Awam

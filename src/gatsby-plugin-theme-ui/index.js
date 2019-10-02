@@ -46,7 +46,7 @@ export default {
       mx: [4, 5],
     },
     p: {
-      fontSize: [1, 2],
+      fontSize: [1, 2, 3],
       fontFamily: "body",
       fontWeight: "body",
       color: "grey",
@@ -59,7 +59,7 @@ export default {
       mt: 1,
       mb: 3,
       p: 0,
-      fontSize: [1, 2],
+      fontSize: [1, 2, 3],
       fontFamily: "body",
       fontWeight: "body",
       color: "grey",

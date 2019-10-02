@@ -6,11 +6,12 @@ export default () => (
     sx={{
       py: [1],
       px: 2,
-      fontWeight: "bold",
+      fontWeight: [700, 900],
       bg: "orange",
       fontSize: [2, 3, 4],
       letterSpacing: 3,
       display: "inline-block",
+      color: "white",
     }}
   >
     #khabarbaik

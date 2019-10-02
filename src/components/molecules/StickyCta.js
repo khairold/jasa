@@ -10,14 +10,14 @@ export default () => (
       bg: "white",
       position: "sticky",
       bottom: 0,
-
+      display: ["block", "none"],
       boxShadow: "0px -1px 1px hsl(220, 88%, 88%)",
     }}
   >
     <div
       sx={{
         m: "auto",
-        maxWidth: 640,
+        maxWidth: 960,
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",
