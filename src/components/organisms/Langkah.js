@@ -9,7 +9,7 @@ export default () => (
           fontSize: [4, 5],
           fontWeight: 600,
           lineHeight: 1,
-          color: "orange",
+          color: "text",
         }}
       >
         Gaya hidup tanpa sempadan kini menanti anda. Dapatkan Pek Jasa anda
@@ -21,7 +21,8 @@ export default () => (
           px: [3, 0],
           boxSizing: "border-box",
           py: 4,
-          fontSize: [2, 2, 3],
+          fontSize: [2, 3],
+          fontWeight: 300,
           display: "flex",
           flexWrap: "wrap",
           width: "100%",
@@ -46,13 +47,30 @@ export default () => (
           }}
         >
           <img
-            sx={{ width: [50, 80], display: "inline-block", mr: 2 }}
+            sx={{ width: [40, 50, 70], display: "inline-block", mr: 2 }}
             src="https://unifi.com.my/lsds/assets/personal/home/pek-jasa/img/pekjasa/jasa-how-1-form.svg"
           />
 
-          <div sx={{ display: "inline-block", pt: [0, 2] }}>
-            <div sx={{ fontWeight: 600, pb: [0, 2] }}>LANGKAH 1</div>
-            Isi borang permohonan dengan butiran peribadi anda
+          <div sx={{ display: "inline-block", pt: [2] }}>
+            <div
+              sx={{
+                fontWeight: 600,
+                mb: [2, 3],
+                fontSize: [0, 1],
+                letterSpacing: 1,
+                color: "grey",
+              }}
+            >
+              LANGKAH 1
+            </div>
+            <span sx={{ fontWeight: 500 }}>Isi borang</span> permohonan{" "}
+            <a
+              sx={{ textDecoration: "underline", color: "orange" }}
+              href="https://unifi.com.my/unifi-en/ijoin/slof-jasa.page"
+            >
+              online
+            </a>{" "}
+            dengan butiran peribadi anda
           </div>
         </div>
         <div
@@ -72,13 +90,30 @@ export default () => (
           }}
         >
           <img
-            sx={{ width: [50, 80], display: "inline-block", mr: 2 }}
+            sx={{ width: [40, 50, 70], display: "inline-block", mr: 2 }}
             src="https://unifi.com.my/lsds/assets/personal/home/pek-jasa/img/pekjasa/jasa-how-2-upload.svg"
           />
 
-          <div sx={{ display: "inline-block", pt: [0, 2] }}>
-            <div sx={{ fontWeight: 600, pb: [0, 2] }}>LANGKAH 2</div>
-            Muat naik dokumen sokongan dan hantar permohonan
+          <div sx={{ display: "inline-block", pt: [2] }}>
+            <div
+              sx={{
+                fontWeight: 600,
+                mb: [2, 3],
+                fontSize: [0, 1],
+                letterSpacing: 1,
+                color: "grey",
+              }}
+            >
+              LANGKAH 2
+            </div>
+            <span sx={{ fontWeight: 500 }}>Muat naik dokumen</span> sokongan dan
+            hantar permohonan.{" "}
+            <a
+              sx={{ textDecoration: "underline", color: "orange" }}
+              href="https://unifi.com.my/lsds/assets/personal/home/pek-jasa/docs/Contoh_Dokumen.pdf"
+            >
+              Contoh dokumen
+            </a>
           </div>
         </div>
         <div
@@ -98,14 +133,24 @@ export default () => (
           }}
         >
           <img
-            sx={{ width: [50, 80], display: "inline-block", mr: 2 }}
+            sx={{ width: [40, 50, 70], display: "inline-block", mr: 2 }}
             src="https://unifi.com.my/lsds/assets/personal/home/pek-jasa/img/pekjasa/jasa-how-3-48hr.svg"
           />
 
-          <div sx={{ display: "inline-block", pt: [0, 2] }}>
-            <div sx={{ fontWeight: 600, pb: [0, 2] }}>LANGKAH 3</div>
-            Pengesahan dan kelulusan akan diberikan dalam tempoh 48 jam pada
-            hari bekerja
+          <div sx={{ display: "inline-block", pt: [2] }}>
+            <div
+              sx={{
+                fontWeight: 600,
+                mb: [2, 3],
+                fontSize: [0, 1],
+                letterSpacing: 1,
+                color: "grey",
+              }}
+            >
+              LANGKAH 3
+            </div>
+            <span sx={{ fontWeight: 500 }}>Pengesahan dan kelulusan</span> akan
+            diberikan dalam tempoh 48 jam pada hari bekerja
           </div>
         </div>
         <div
@@ -125,14 +170,25 @@ export default () => (
           }}
         >
           <img
-            sx={{ width: [50, 80], display: "inline-block", mr: 2 }}
+            sx={{ width: [40, 50, 70], display: "inline-block", mr: 2 }}
             src="https://unifi.com.my/lsds/assets/personal/home/pek-jasa/img/pekjasa/jasa-how-4-email.svg"
           />
 
-          <div sx={{ display: "inline-block", pt: [0, 2] }}>
-            <div sx={{ fontWeight: 600, pb: [0, 2] }}>LANGKAH 4</div>
-            Tunggu e-mel pengesahan daripada kami. Satu pautan akan diberikan
-            selepas diluluskan untuk membuat pembelian anda.
+          <div sx={{ display: "inline-block", pt: [2] }}>
+            <div
+              sx={{
+                fontWeight: 600,
+                mb: [2, 3],
+                fontSize: [0, 1],
+                letterSpacing: 1,
+                color: "grey",
+              }}
+            >
+              LANGKAH 4
+            </div>
+            <span sx={{ fontWeight: 500 }}>Tunggu e-mel</span> pengesahan
+            daripada kami. Satu pautan akan diberikan selepas diluluskan untuk
+            membuat pembelian anda.
           </div>
         </div>
       </div>

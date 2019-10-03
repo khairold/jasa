@@ -2,13 +2,12 @@
 import React, { useState } from "react"
 import { jsx } from "theme-ui"
 import KhabarBaik from "../molecules/KhabarBaik"
-import UnifiLogo from "../molecules/UnifiLogo"
 import PenjawatAwam from "../molecules/PenjawatAwam"
 
 const KelebihanListItem = ({ children }) => (
   <li
     sx={{
-      my: 1,
+      mb: 1,
       display: "flex",
       color: "text",
       fontWeight: 500,
@@ -28,57 +27,75 @@ const Price = () => (
     <div
       sx={{
         textAlign: "",
-        fontSize: [3, 4, 5],
         color: "blue",
-        fontWeight: 900,
         display: "flex",
-        alignItems: "center",
+        alignItems: "baseline",
+        lineHeight: 1,
       }}
     >
-      Pek Jasa
-      <img
-        sx={{ ml: 1, height: [18, 22, 26] }}
-        src="https://unifi.com.my/lsds/assets/images/common/makeover/unifi-logo.svg"
-      />
+      <span sx={{ fontWeight: 900, fontSize: [4, 5], letterSpacing: -0.5 }}>
+        Pek Jasa{" "}
+      </span>
+      <span
+        sx={{
+          ml: 1,
+          fontSize: [2, 3],
+          fontWeight: 400,
+          color: "blue",
+          letterSpacing: -1,
+        }}
+      >
+        unifi Mobile™
+      </span>
     </div>
     <div
       sx={{
-        fontSize: [0, 1, 1],
+        fontSize: [0, 1],
         color: "lightGrey",
         mb: 3,
       }}
     >
-      Pelan pasca bayar unifi Mobile™
+      Pelan pasca bayar
     </div>
-    <div sx={{ py: [2, 3] }}>
-      <span
-        sx={{
-          color: "blue",
-          position: "relative",
-          top: -34,
-          letterSpacing: -1,
-        }}
-      >
-        RM
-      </span>
-      <span
-        sx={{
-          fontSize: [7],
-          fontWeight: "bold",
-          color: "blue",
-        }}
-      >
-        59
-      </span>
-      <span
-        sx={{
-          fontSize: 2,
-          color: "lightGrey",
-          letterSpacing: -1,
-        }}
-      >
-        / bulan
-      </span>
+    <div
+      sx={{
+        width: "100%",
+        display: "flex",
+        justifyContent: "space-between",
+        py: [1, 2],
+      }}
+    >
+      <div>
+        <span
+          sx={{
+            color: "blue",
+            position: "relative",
+            top: -34,
+            letterSpacing: -1,
+          }}
+        >
+          RM
+        </span>
+        <span
+          sx={{
+            fontSize: [7],
+            fontWeight: "bold",
+            color: "blue",
+            letterSpacing: -1,
+          }}
+        >
+          59
+        </span>
+        <span
+          sx={{
+            fontSize: 2,
+            color: "lightGrey",
+            letterSpacing: -1,
+          }}
+        >
+          / bulan
+        </span>
+      </div>
     </div>
   </div>
 )
@@ -107,7 +124,7 @@ const CardButton = () => (
         cursor: "pointer",
       }}
     >
-      <div sx={{ fontWeight: "bold", fontSize: [2, 3] }}>DAFTAR ONLINE ></div>
+      <div sx={{ fontWeight: "bold", fontSize: [2, 3] }}>DAFTAR ONLINE</div>
       <div sx={{ fontSize: [0, 1], lineHeight: 1, color: "faintOrange" }}>
         Kad SIM dihantar dalam masa 2 hari
       </div>
@@ -137,8 +154,10 @@ const MoreItems = () => {
         <>
           <KelebihanListItem>
             Hotspot 10GB;{" "}
-            <span sx={{ color: "lightGrey", fontSize: 1, fontWeight: 400 }}>
-              RM8 untuk setiap 500MB seterusnya
+            <span
+              sx={{ color: "lightGrey", fontSize: [0, 1], fontWeight: 400 }}
+            >
+              seterusnya RM8/500MB
             </span>
           </KelebihanListItem>
           <KelebihanListItem>
@@ -147,10 +166,7 @@ const MoreItems = () => {
               sx={{ color: "text", textDecoration: "underline" }}
               href="https://unifi.com.my/personal/mobile/roaming"
             >
-              Roaming RM38
-              <span sx={{ color: "lightGrey", fontSize: 1, fontWeight: 400 }}>
-                /sehari
-              </span>
+              Roaming RM38/sehari
             </a>
           </KelebihanListItem>
           <KelebihanListItem>
@@ -160,7 +176,9 @@ const MoreItems = () => {
               href="https://unifi.com.my/personal/mobile/international-direct-dial"
             >
               Kadar IDD{" "}
-              <span sx={{ color: "lightGrey", fontSize: 1, fontWeight: 400 }}>
+              <span
+                sx={{ color: "lightGrey", fontSize: [0, 1], fontWeight: 400 }}
+              >
                 yang berpatutan
               </span>
             </a>
@@ -178,7 +196,7 @@ const CardList = () => (
   >
     <KelebihanListItem>
       Diskaun RM40
-      <span sx={{ color: "lightGrey", fontSize: 1, fontWeight: 400 }}>
+      <span sx={{ color: "lightGrey", fontSize: [0, 1], fontWeight: 400 }}>
         {"; "}
         harga biasa
         <span style={{ textDecoration: "line-through" }}> RM99</span>
@@ -186,13 +204,13 @@ const CardList = () => (
     </KelebihanListItem>
     <KelebihanListItem>
       Tanpa had{" "}
-      <span sx={{ color: "lightGrey", fontSize: 1, fontWeight: 400 }}>
+      <span sx={{ color: "lightGrey", fontSize: [0, 1], fontWeight: 400 }}>
         data, panggilan & SMS
       </span>
     </KelebihanListItem>
     <KelebihanListItem>
       Tanpa kontrak{"; "}
-      <span sx={{ color: "lightGrey", fontSize: 1, fontWeight: 400 }}>
+      <span sx={{ color: "lightGrey", fontSize: [0, 1], fontWeight: 400 }}>
         batal bila-bila masa
       </span>
     </KelebihanListItem>
@@ -204,7 +222,7 @@ export default () => (
   <div
     sx={{
       position: "relative",
-      backgroundPosition: "center",
+      backgroundPosition: ["center", "center", "left"],
       backgroundSize: "cover",
       backgroundRepeat: "no-repeat",
       // backgroundImage: `url("https://unifi.com.my/lsds/assets/personal/home/pek-jasa/img/pekjasa/campaign-masthead.jpg")`,

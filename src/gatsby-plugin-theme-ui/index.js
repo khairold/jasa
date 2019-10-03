@@ -13,6 +13,7 @@ export default {
     text: "hsl(0, 0%, 28%)",
     lightBlue: "hsl(212, 74%,50%)",
     faintBlue: "hsl(220, 88%, 88%)",
+    greyBlue: "#1c2237",
     darkBlue: "hsl(212, 88%, 23%)",
     faintOrange: "hsl(36, 100%, 88%)",
     dGrey: "rgb(236, 236, 236)",

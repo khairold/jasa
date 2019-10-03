@@ -15,7 +15,7 @@ export default () => (
           fontSize: [4, 5],
           fontWeight: 600,
           lineHeight: 1,
-          color: "orange",
+          color: "text",
         }}
       >
         Kami betul-betul maksudkannya apabila kami kata tanpa had. Jalani gaya
@@ -31,6 +31,10 @@ export default () => (
           flexWrap: "wrap",
           width: "100%",
           bg: "white",
+          px: [2, 0],
+          boxSizing: "border-box",
+          fontWeight: 300,
+          // color: "lightGrey",
         }}
       >
         <div
@@ -49,8 +53,10 @@ export default () => (
           />
 
           <div sx={{ display: "inline-block" }}>
-            Kendalikan pelan pasca bayar mudah alih anda sendiri kerana anda
-            tidak terikat dengan sebarang kontrak
+            <span sx={{ fontWeight: 500 }}>
+              Anda tidak terikat dengan sebarang kontrak
+            </span>
+            . Kendalikan pelan pasca bayar mudah alih anda sendiri.
           </div>
         </div>
         <div
@@ -69,8 +75,10 @@ export default () => (
           />
 
           <div sx={{ display: "inline-block" }}>
-            Hantar permohonan anda sekarang. Selepas pengesahan, kad SIM akan di
-            hantar ke rumah anda tanpa sebarang bayaran
+            <span sx={{ fontWeight: 500 }}>
+              Kad SIM akan di hantar ke rumah anda tanpa sebarang bayaran
+            </span>{" "}
+            selepas pengesahan. Hantar permohonan anda sekarang.
           </div>
         </div>
         <div
@@ -89,8 +97,9 @@ export default () => (
           />
 
           <div sx={{ display: "inline-block" }}>
-            Liputan seluruh negara supaya anda sentiasa boleh berhubung dengan
-            sesiapa sahaja di mana-mana sahaja
+            <span sx={{ fontWeight: 500 }}>Liputan seluruh negara</span> supaya
+            anda sentiasa boleh berhubung dengan sesiapa sahaja di mana-mana
+            sahaja
           </div>
         </div>
         <div
@@ -109,8 +118,11 @@ export default () => (
           />
 
           <div sx={{ display: "inline-block" }}>
-            Pendaftaran percuma yang pantas dan mudah. Anda hanya perlukan 10
-            minit untuk membuat permohonan dan tunggu untuk kelulusan
+            <span sx={{ fontWeight: 500 }}>
+              Pendaftaran online percuma yang pantas dan mudah.
+            </span>{" "}
+            Anda hanya perlukan 10 minit untuk membuat permohonan dan tunggu
+            untuk kelulusan
           </div>
         </div>
       </div>
