@@ -8,7 +8,8 @@ export default () => (
   <div
     sx={{
       bg: "blue",
-      color: ["hsl(220, 88%, 88%)", "white"],
+      // color: ["hsl(220, 88%, 88%)", "white"],
+      color: "white",
       py: [5, 5, 6],
       px: 4,
     }}

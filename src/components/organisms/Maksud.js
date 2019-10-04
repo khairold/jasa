@@ -48,6 +48,7 @@ export default () => (
           }}
         >
           <img
+            alt="tanpa kontrak unifi Pek Jasa"
             sx={{ width: [50, 70], display: "inline-block", mr: 2 }}
             src="https://unifi.com.my/lsds/assets/personal/home/pek-jasa/img/pekjasa/no-contracts.svg"
           />
@@ -70,6 +71,7 @@ export default () => (
           }}
         >
           <img
+            alt="hantaran sim percuma unifi Pek Jasa"
             sx={{ width: [50, 70], display: "inline-block", mr: 2 }}
             src="https://unifi.com.my/lsds/assets/personal/home/pek-jasa/img/pekjasa/free-delivery.svg"
           />
@@ -92,6 +94,7 @@ export default () => (
           }}
         >
           <img
+            alt="liputan unifi Pek Jasa"
             sx={{ width: [50, 70], display: "inline-block", mr: 2 }}
             src="https://unifi.com.my/lsds/assets/personal/home/pek-jasa/img/pekjasa/nationwide-coverage.svg"
           />
@@ -113,6 +116,7 @@ export default () => (
           }}
         >
           <img
+            alt="pendaftaran online pantas unifi Pek Jasa"
             sx={{ width: [50, 70], display: "inline-block", mr: 2 }}
             src="https://unifi.com.my/lsds/assets/personal/home/pek-jasa/img/pekjasa/fast-registration.svg"
           />

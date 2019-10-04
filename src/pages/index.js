@@ -16,6 +16,8 @@ import Liputan from "../content/liputan.mdx"
 import Kelayakan from "../content/kelayakan.mdx"
 import Mnp from "../content/mnp.mdx"
 
+import { Helmet } from "react-helmet"
+
 const maxWidth = 960
 
 export default props => {
@@ -35,6 +37,19 @@ export default props => {
         boxShadow: "0px 0px 10px hsl(0, 0%, 70%)",
       }}
     >
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>unifi Pek Jasa</title>
+        <meta name="title" content="unifi Pek Jasa"></meta>
+        <meta
+          name="keywords"
+          content="daftar pek jasa, pek jasa guru, pek jasa penjawat awam, pek jasa unifi pdrm, unifi pek jasa"
+        ></meta>
+        <meta
+          name="description"
+          content="Daftar unifi Pek Jasa sekarang untuk anda jalani hidup tanpa sempadan dengan menikmati data, panggilan dan SMS tanpa had sepanjang hari, setiap hari khas buat semua penjawat awam"
+        ></meta>
+      </Helmet>
       <div>
         <Header />
         <div ref={card}>

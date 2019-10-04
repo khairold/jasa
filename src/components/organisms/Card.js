@@ -137,7 +137,7 @@ const MoreItems = () => {
   return (
     <>
       {lanjut ? (
-        <div
+        <li
           sx={{
             mt: 1,
             ml: 3,
@@ -149,7 +149,7 @@ const MoreItems = () => {
           onClick={() => setLanjut(false)}
         >
           ...lebih lanjut
-        </div>
+        </li>
       ) : (
         <>
           <KelebihanListItem>
@@ -226,7 +226,7 @@ export default () => (
       backgroundSize: "cover",
       backgroundRepeat: "no-repeat",
       // backgroundImage: `url("https://unifi.com.my/lsds/assets/personal/home/pek-jasa/img/pekjasa/campaign-masthead.jpg")`,
-      backgroundImage: `url("/images/campaign-masthead.jpg")`,
+      backgroundImage: `url("/images/campaign-masthead.webp")`,
     }}
   >
     <div

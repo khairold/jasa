@@ -47,11 +47,17 @@ export default () => (
           }}
         >
           <img
-            sx={{ width: [40, 50, 70], display: "inline-block", mr: 2 }}
+            alt="daftar online unifi Pek Jasa"
+            sx={{
+              pt: [29, 0],
+              width: [40, 50, 70],
+              display: "inline-block",
+              mr: 2,
+            }}
             src="https://unifi.com.my/lsds/assets/personal/home/pek-jasa/img/pekjasa/jasa-how-1-form.svg"
           />
 
-          <div sx={{ display: "inline-block", pt: [2] }}>
+          <div sx={{ display: "inline-block", pt: [2], pb: [3, 0] }}>
             <div
               sx={{
                 fontWeight: 600,
@@ -90,11 +96,17 @@ export default () => (
           }}
         >
           <img
-            sx={{ width: [40, 50, 70], display: "inline-block", mr: 2 }}
+            alt="muat naik dokumen unifi Pek Jasa"
+            sx={{
+              pt: [29, 0],
+              width: [40, 50, 70],
+              display: "inline-block",
+              mr: 2,
+            }}
             src="https://unifi.com.my/lsds/assets/personal/home/pek-jasa/img/pekjasa/jasa-how-2-upload.svg"
           />
 
-          <div sx={{ display: "inline-block", pt: [2] }}>
+          <div sx={{ display: "inline-block", pt: [2], pb: [3, 0] }}>
             <div
               sx={{
                 fontWeight: 600,
@@ -133,11 +145,17 @@ export default () => (
           }}
         >
           <img
-            sx={{ width: [40, 50, 70], display: "inline-block", mr: 2 }}
+            alt="pengesahan dan kelulusan unifi Pek Jasa"
+            sx={{
+              pt: [29, 0],
+              width: [40, 50, 70],
+              display: "inline-block",
+              mr: 2,
+            }}
             src="https://unifi.com.my/lsds/assets/personal/home/pek-jasa/img/pekjasa/jasa-how-3-48hr.svg"
           />
 
-          <div sx={{ display: "inline-block", pt: [2] }}>
+          <div sx={{ display: "inline-block", pt: [2], pb: [3, 0] }}>
             <div
               sx={{
                 fontWeight: 600,
@@ -170,11 +188,17 @@ export default () => (
           }}
         >
           <img
-            sx={{ width: [40, 50, 70], display: "inline-block", mr: 2 }}
+            alt="tunggu email kelulusan unifi Pek Jasa"
+            sx={{
+              pt: [29, 0],
+              width: [40, 50, 70],
+              display: "inline-block",
+              mr: 2,
+            }}
             src="https://unifi.com.my/lsds/assets/personal/home/pek-jasa/img/pekjasa/jasa-how-4-email.svg"
           />
 
-          <div sx={{ display: "inline-block", pt: [2] }}>
+          <div sx={{ display: "inline-block", pt: [2], pb: [3, 0] }}>
             <div
               sx={{
                 fontWeight: 600,
