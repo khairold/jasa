@@ -41,8 +41,9 @@ const MenuList = ({ children, Icon }) => (
   </div>
 )
 
-export default () => {
+export default ({ hideOnScroll }) => {
   const [box, boxView] = useInView({ threshold: 0 })
+  console.log(hideOnScroll)
   return (
     <>
       <div
@@ -83,12 +84,16 @@ export default () => {
           // boxShadow: "0px 2px 6px hsl(0, 0%, 70%)",
           position: "sticky",
           top: 0,
-          visibility: [boxView ? "hidden" : "visible", "visible"],
+          visibility: [
+            boxView || !hideOnScroll ? "hidden" : "visible",
+            "visible",
+          ],
           scrollbarWidth: 0,
           borderBottomStyle: "solid",
           borderBottomColor: "faintBlue",
           borderBottomWidth: 1,
           boxSizing: "border-box",
+          // display: hideOnScroll ? "block" : "none",
         }}
       >
         <div

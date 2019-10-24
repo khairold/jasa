@@ -3,7 +3,7 @@ import React from "react"
 import { jsx } from "theme-ui"
 
 export default () => (
-  <div sx={{ px: 3, pt: [3, 1], pb: [3, 1], textAlign: "center" }}>
+  <div sx={{ px: [2, 3], pt: [3, 1], pb: [3, 1], textAlign: "center" }}>
     <div
       sx={{
         fontWeight: [700, 700],

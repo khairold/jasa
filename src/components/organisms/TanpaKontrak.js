@@ -43,8 +43,8 @@ export default () => (
           lineHeight: [1.2, 1.4],
         }}
       >
-        Tiada risiko untuk anda mencuba. Tamatkan langganan atau tukar kepada
-        pengendali talian mudah alih yang lain pada bila-bila masa.
+        Tiada risiko. Tamatkan langganan Pek Jasa pada bila-bila masa tanpa
+        sebarang penalti.
       </div>
       <div>
         <a

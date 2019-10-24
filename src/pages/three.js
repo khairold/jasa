@@ -1,4 +1,5 @@
 /** @jsx jsx */
+import { useState } from "react"
 import { jsx } from "theme-ui"
 import Header from "../components/organisms/Header"
 import Card from "../components/organisms/Card"
@@ -10,16 +11,30 @@ import Info from "../components/organisms/Info"
 import TanpaKontrak from "../components/organisms/TanpaKontrak"
 import Terma from "../components/organisms/Terma"
 
-export default () => (
-  <div>
-    <Header />
-    <Card />
-    <Menu />
-    <Kelebihan />
-    <Liputan />
-    <Langkah />
-    <Info />
-    <TanpaKontrak />
-    <Terma />
-  </div>
-)
+import { useScrollPosition } from "@n8tb1t/use-scroll-position"
+
+export default () => {
+  const [hideOnScroll, setHideOnScroll] = useState(true)
+
+  useScrollPosition(
+    ({ prevPos, currPos }) => {
+      const isShow = currPos.y > prevPos.y
+      if (isShow !== hideOnScroll) setHideOnScroll(isShow)
+    },
+    [hideOnScroll]
+  )
+
+  return (
+    <div onScroll={event => console.log("event")}>
+      <Header />
+      <Card />
+      <Menu hideOnScroll={hideOnScroll} />
+      <Kelebihan />
+      <Liputan />
+      <Langkah />
+      <Info />
+      <TanpaKontrak />
+      <Terma />
+    </div>
+  )
+}
