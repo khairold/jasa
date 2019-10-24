@@ -1,221 +1,202 @@
 /** @jsx jsx */
+import React from "react"
 import { jsx } from "theme-ui"
+import FileText from "../../icons/FileText"
+import ShoppingCart from "../../icons/ShoppingCart"
+import Mail from "../../icons/Mail"
+import Truck from "../../icons/Truck"
+
+const StepsCircle = ({ children }) => (
+  <div
+    sx={{
+      borderStyle: "solid",
+      borderWidth: 2,
+      borderColor: "lightGrey",
+      size: 30,
+      textAlign: "center",
+      borderRadius: "50%",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      color: "lightGrey",
+      fontWeight: 600,
+    }}
+  >
+    {children}
+  </div>
+)
+
+const StepsLine = ({ first, last, top, bottom, visibility, ml, mr }) => (
+  <hr
+    sx={{
+      borderTopStyle: "solid",
+      borderTopWidth: 2,
+      borderTopColor: "lightGrey",
+      flex: 1,
+      mx: 0,
+      my: 0,
+      ml: [null, ml],
+      mr: [null, mr],
+      visibility,
+      display: [top && "none", "block"],
+    }}
+  />
+)
+
+const Langkah = ({ first, last, title, subtitle, sequence, icon }) => {
+  const Icon = icon
+  return (
+    <div
+      sx={{
+        flex: 1,
+        display: "flex",
+        flexDirection: ["row", "column"],
+        alignItems: ["flex-start", "center"],
+      }}
+    >
+      <div
+        sx={{
+          display: "flex",
+          justifyContent: ["flex-start", "center"],
+          alignItems: "center",
+          width: [null, "100%"],
+          height: [100, 50],
+          flexDirection: ["column", "row"],
+        }}
+      >
+        <StepsLine
+          top
+          first={first}
+          ml={last && 0}
+          visibility={first && "hidden"}
+        />
+        <StepsCircle>{sequence}</StepsCircle>
+        <StepsLine
+          bottom
+          last={last}
+          mr={first && 0}
+          visibility={last && "hidden"}
+        />
+      </div>
+      <div sx={{ ml: [3, 0] }}>
+        <div
+          sx={{
+            mt: [1, 3],
+            mb: 2,
+            display: "flex",
+            alignItems: "center",
+            justifyContent: ["flex-start", "center"],
+          }}
+        >
+          <Icon sx={{ size: 24, color: "text", mr: 2 }} />
+          <div sx={{ fontWeight: 500, fontSize: 2 }}>{title}</div>
+        </div>
+        <div
+          sx={{
+            maxWidth: "14rem",
+            fontWeight: 300,
+            fontSize: 1,
+            textAlign: ["left", "center"],
+            // bg: "blue",
+            height: [40, 60],
+          }}
+        >
+          {subtitle}
+        </div>
+      </div>
+    </div>
+  )
+}
+
+const DaftarSekarang = () => (
+  <a
+    href=""
+    sx={{
+      borderColor: "orange",
+      borderStyle: "solid",
+      borderWidth: 1,
+      color: "white",
+      bg: "orange",
+      fontWeight: 600,
+      letterSpacing: 1,
+      borderRadius: 4,
+      px: 3,
+      py: [3, 3],
+      fontSize: [3, 3],
+      boxSizing: "border-box",
+      display: "inline-block",
+      textAlign: "center",
+    }}
+  >
+    Daftar Sekarang
+    <svg
+      sx={{ fill: "white" }}
+      preserveAspectRatio="xMidYMid meet"
+      height="1em"
+      width="1em"
+      viewBox="0 0 40 40"
+      style={{ verticalAlign: "middle" }}
+    >
+      <g>
+        <path d="m20 6.6l13.4 13.4-13.4 13.4-2.3-2.4 9.3-9.4h-20.4v-3.2h20.4l-9.3-9.4z"></path>
+      </g>
+    </svg>
+  </a>
+)
 
 export default () => (
-  <div sx={{ px: 4, py: 5, bg: "backGroundGrey", color: "text", fontSize: 2 }}>
-    <div sx={{ maxWidth: 960, m: "auto" }}>
-      <div
-        sx={{
-          fontSize: [4, 5],
-          fontWeight: 600,
-          lineHeight: 1,
-          color: "text",
-        }}
-      >
-        Gaya hidup tanpa sempadan kini menanti anda. Dapatkan Pek Jasa anda
-        sekarang apabila anda melengkapkan langkah mudah ini!
-      </div>
-      <div
-        sx={{
-          mt: [3, 0],
-          px: [3, 0],
-          boxSizing: "border-box",
-          py: 4,
-          fontSize: [2, 3],
-          fontWeight: 300,
-          display: "flex",
-          flexWrap: "wrap",
-          width: "100%",
-          justifyContent: "space-around",
-          bg: ["white", "backGroundGrey"],
-        }}
-      >
-        <div
-          sx={{
-            display: "flex",
-            alignItems: "flex-start",
-            mb: 3,
-            width: ["100%", "20%"],
-            flexDirection: ["row", "column"],
-            px: [0, 3],
-            boxSizing: "border-box",
-            borderColor: "orange",
-            borderStyle: ["none", "solid"],
-            borderWidth: 1,
-            py: [0, 3],
-            bg: ["none", "white"],
-          }}
-        >
-          <img
-            alt="daftar online unifi Pek Jasa"
-            sx={{
-              pt: [29, 0],
-              width: [40, 50, 70],
-              display: "inline-block",
-              mr: 2,
-            }}
-            src="https://unifi.com.my/lsds/assets/personal/home/pek-jasa/img/pekjasa/jasa-how-1-form.svg"
-          />
-
-          <div sx={{ display: "inline-block", pt: [2], pb: [3, 0] }}>
-            <div
-              sx={{
-                fontWeight: 600,
-                mb: [2, 3],
-                fontSize: [0, 1],
-                letterSpacing: 1,
-                color: "grey",
-              }}
-            >
-              LANGKAH 1
-            </div>
-            <span sx={{ fontWeight: 500 }}>Isi borang</span> permohonan{" "}
-            <a
-              sx={{ textDecoration: "underline", color: "orange" }}
-              href="https://unifi.com.my/unifi-en/ijoin/slof-jasa.page"
-            >
-              online
-            </a>{" "}
-            dengan butiran peribadi anda
-          </div>
-        </div>
-        <div
-          sx={{
-            display: "flex",
-            alignItems: "flex-start",
-            mb: 3,
-            width: ["100%", "20%"],
-            flexDirection: ["row", "column"],
-            px: [0, 3],
-            boxSizing: "border-box",
-            borderColor: "orange",
-            borderStyle: ["none", "solid"],
-            borderWidth: 1,
-            py: [0, 3],
-            bg: ["none", "white"],
-          }}
-        >
-          <img
-            alt="muat naik dokumen unifi Pek Jasa"
-            sx={{
-              pt: [29, 0],
-              width: [40, 50, 70],
-              display: "inline-block",
-              mr: 2,
-            }}
-            src="https://unifi.com.my/lsds/assets/personal/home/pek-jasa/img/pekjasa/jasa-how-2-upload.svg"
-          />
-
-          <div sx={{ display: "inline-block", pt: [2], pb: [3, 0] }}>
-            <div
-              sx={{
-                fontWeight: 600,
-                mb: [2, 3],
-                fontSize: [0, 1],
-                letterSpacing: 1,
-                color: "grey",
-              }}
-            >
-              LANGKAH 2
-            </div>
-            <span sx={{ fontWeight: 500 }}>Muat naik dokumen</span> sokongan dan
-            hantar permohonan.{" "}
-            <a
-              sx={{ textDecoration: "underline", color: "orange" }}
-              href="https://unifi.com.my/lsds/assets/personal/home/pek-jasa/docs/Contoh_Dokumen.pdf"
-            >
-              Contoh dokumen
-            </a>
-          </div>
-        </div>
-        <div
-          sx={{
-            display: "flex",
-            alignItems: "flex-start",
-            mb: 3,
-            width: ["100%", "20%"],
-            flexDirection: ["row", "column"],
-            px: [0, 3],
-            boxSizing: "border-box",
-            borderColor: "orange",
-            borderStyle: ["none", "solid"],
-            borderWidth: 1,
-            py: [0, 3],
-            bg: ["none", "white"],
-          }}
-        >
-          <img
-            alt="pengesahan dan kelulusan unifi Pek Jasa"
-            sx={{
-              pt: [29, 0],
-              width: [40, 50, 70],
-              display: "inline-block",
-              mr: 2,
-            }}
-            src="https://unifi.com.my/lsds/assets/personal/home/pek-jasa/img/pekjasa/jasa-how-3-48hr.svg"
-          />
-
-          <div sx={{ display: "inline-block", pt: [2], pb: [3, 0] }}>
-            <div
-              sx={{
-                fontWeight: 600,
-                mb: [2, 3],
-                fontSize: [0, 1],
-                letterSpacing: 1,
-                color: "grey",
-              }}
-            >
-              LANGKAH 3
-            </div>
-            <span sx={{ fontWeight: 500 }}>Pengesahan dan kelulusan</span> akan
-            diberikan dalam tempoh 48 jam pada hari bekerja
-          </div>
-        </div>
-        <div
-          sx={{
-            display: "flex",
-            alignItems: "flex-start",
-            mb: 3,
-            width: ["100%", "20%"],
-            flexDirection: ["row", "column"],
-            px: [0, 3],
-            boxSizing: "border-box",
-            borderColor: "orange",
-            borderStyle: ["none", "solid"],
-            borderWidth: 1,
-            py: [0, 3],
-            bg: ["none", "white"],
-          }}
-        >
-          <img
-            alt="tunggu email kelulusan unifi Pek Jasa"
-            sx={{
-              pt: [29, 0],
-              width: [40, 50, 70],
-              display: "inline-block",
-              mr: 2,
-            }}
-            src="https://unifi.com.my/lsds/assets/personal/home/pek-jasa/img/pekjasa/jasa-how-4-email.svg"
-          />
-
-          <div sx={{ display: "inline-block", pt: [2], pb: [3, 0] }}>
-            <div
-              sx={{
-                fontWeight: 600,
-                mb: [2, 3],
-                fontSize: [0, 1],
-                letterSpacing: 1,
-                color: "grey",
-              }}
-            >
-              LANGKAH 4
-            </div>
-            <span sx={{ fontWeight: 500 }}>Tunggu e-mel</span> pengesahan
-            daripada kami. Satu pautan akan diberikan selepas diluluskan untuk
-            membuat pembelian anda.
-          </div>
-        </div>
-      </div>
+  <div sx={{ fontFamily: "body", color: "text", py: [4, 5] }}>
+    <h3
+      sx={{
+        px: [3, 0],
+        mt: 4,
+        mb: [4, 5],
+        textAlign: ["center", "center"],
+        fontSize: [7, 7],
+        lineHeight: 1,
+        fontWeight: "900",
+      }}
+    >
+      Langkah untuk melanggan Pek Jasa
+    </h3>
+    <div
+      sx={{
+        display: "flex",
+        justifyContent: "space-around",
+        alignItems: "center",
+        width: "100%",
+        flexDirection: ["column", "row"],
+      }}
+    >
+      <Langkah
+        sequence="1"
+        icon={FileText}
+        first
+        title="Daftar online"
+        subtitle="Hantar butiran dan kami akan menyemak kelayakan anda."
+      />
+      <Langkah
+        sequence="2"
+        icon={Mail}
+        title="Tunggu e-mel"
+        subtitle="Pengesahan dalam 48 jam hari bekerja. Klik pautan dalam e-mel."
+      />
+      <Langkah
+        sequence="3"
+        icon={ShoppingCart}
+        title="Pilih nombor"
+        subtitle="Lengkapkan langganan. Pilih nombor baru atau kekalkan nombor."
+      />
+      <Langkah
+        sequence="4"
+        icon={Truck}
+        last
+        title="Terima Kad SIM"
+        subtitle="Kad SIM akan di hantar dalam masa dua hari tanpa sebarang bayaran."
+      />
+    </div>
+    <div sx={{ textAlign: "center", mt: [3, 5] }}>
+      <DaftarSekarang />
     </div>
   </div>
 )

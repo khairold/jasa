@@ -3,13 +3,16 @@ import React from "react"
 import { jsx } from "theme-ui"
 
 export default () => (
-  <div sx={{ pl: 3, pt: [2, 1], pb: [3, 1] }}>
+  <div sx={{ px: 3, pt: [3, 1], pb: [3, 1], textAlign: "center" }}>
     <div
       sx={{
-        fontWeight: [500, 700],
-        fontSize: [3, 4, 5],
+        fontWeight: [700, 700],
+        fontSize: [7, 7],
         mt: 2,
-        color: ["hsl(220, 88%, 88%)", "white"],
+        // color: ["hsl(220, 88%, 88%)", "white"],
+
+        color: "white",
+        lineHeight: 1,
       }}
     >
       Eksklusif untuk Penjawat Awam
@@ -17,11 +20,12 @@ export default () => (
     <div
       sx={{
         lineHeight: 1.2,
-        fontSize: [0, 1, 2],
-        pt: 0,
+        fontSize: [1, 3],
+        pt: [3, 2],
         pb: 3,
         letterSpacing: 0.8,
-        color: "hsl(216, 88%, 75%)",
+        // color: "hsl(216, 88%, 75%)",
+        color: "hsl(220, 88%, 88%)",
       }}
     >
       POLIS · TENTERA · GURU · KAKITANGAN KERAJAAN

@@ -6,27 +6,34 @@ import PenjawatAwam from "../molecules/PenjawatAwam"
 
 export default () => (
   <div
-    sx={{ px: 4, py: 4, bg: "backGroundGrey", color: "text", fontSize: [1, 2] }}
+    sx={{
+      fontFamily: "body",
+      px: 4,
+      py: 4,
+      bg: "backGroundGrey",
+      color: "text",
+      fontSize: [0, 1],
+    }}
   >
-    <div sx={{ maxWidth: 960, m: "auto" }}>
+    <div sx={{ m: "auto", textAlign: "center" }}>
       <div>
         Klik disini untuk{" "}
         <a
           sx={{
             color: "orange",
-            textDecoration: "underline",
-            fontWeight: "bold",
+            // textDecoration: "underline",
+            // fontWeight: "bold",
           }}
           href="https://unifi.com.my/lsds/assets/documents/FAQ%20unifi%20Mobile%20Jasa%20Pack%202019%20(Extended%20to%20Contract%20Staff).pdf"
         >
-          Pek Jasa FAQ
+          FAQ Pek Jasa
         </a>{" "}
         dan{" "}
         <a
           sx={{
             color: "orange",
-            textDecoration: "underline",
-            fontWeight: "bold",
+            // textDecoration: "underline",
+            // fontWeight: "bold",
           }}
           href="https://unifi.com.my/lsds/assets/documents/TERMA%20DAN%20SYARAT%20UNTUK%20PROMOSI%20PEK%20JASA%2018%20JULY%202019.pdf"
         >

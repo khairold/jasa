@@ -45,6 +45,7 @@ export default () => (
             width: ["100%", "50%"],
             px: [0, 2],
             boxSizing: "border-box",
+            pb: [3, 3],
           }}
         >
           <img
@@ -68,6 +69,7 @@ export default () => (
             width: ["100%", "50%"],
             px: [0, 2],
             boxSizing: "border-box",
+            pb: [3, 3],
           }}
         >
           <img
@@ -91,6 +93,7 @@ export default () => (
             width: ["100%", "50%"],
             px: [0, 2],
             boxSizing: "border-box",
+            pb: [3, 3],
           }}
         >
           <img
@@ -113,6 +116,7 @@ export default () => (
             width: ["100%", "50%"],
             px: [0, 2],
             boxSizing: "border-box",
+            pb: [3, 3],
           }}
         >
           <img

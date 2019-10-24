@@ -7,7 +7,8 @@ import PenjawatAwam from "../molecules/PenjawatAwam"
 const KelebihanListItem = ({ children }) => (
   <li
     sx={{
-      mb: 1,
+      mb: 2,
+      pb: 1,
       display: "flex",
       color: "text",
       fontWeight: 500,
@@ -33,8 +34,10 @@ const Price = () => (
         lineHeight: 1,
       }}
     >
-      <span sx={{ fontWeight: 900, fontSize: [4, 5], letterSpacing: -0.5 }}>
-        Pek Jasa{" "}
+      <span
+        sx={{ fontWeight: 900, fontSize: [4, 5], letterSpacing: -0.5, mr: 1 }}
+      >
+        unifi Mobile™ 99{" "}
       </span>
       <span
         sx={{
@@ -45,7 +48,7 @@ const Price = () => (
           letterSpacing: -1,
         }}
       >
-        unifi Mobile™
+        Pek Jasa
       </span>
     </div>
     <div
@@ -57,79 +60,110 @@ const Price = () => (
     >
       Pelan pasca bayar
     </div>
-    <div
-      sx={{
-        width: "100%",
-        display: "flex",
-        justifyContent: "space-between",
-        py: [1, 2],
-      }}
-    >
-      <div>
-        <span
-          sx={{
-            color: "blue",
-            position: "relative",
-            top: -34,
-            letterSpacing: -1,
-          }}
-        >
-          RM
-        </span>
-        <span
-          sx={{
-            fontSize: [7],
-            fontWeight: "bold",
-            color: "blue",
-            letterSpacing: -1,
-          }}
-        >
-          59
-        </span>
-        <span
-          sx={{
-            fontSize: 2,
-            color: "lightGrey",
-            letterSpacing: -1,
-          }}
-        >
-          / bulan
-        </span>
+    <div sx={{ py: [2, 3] }}>
+      <div
+        sx={{
+          width: "100%",
+          display: "flex",
+          justifyContent: "space-between",
+        }}
+      >
+        <div>
+          <span
+            sx={{
+              color: "blue",
+              position: "relative",
+              top: [-34, -40],
+              letterSpacing: -1,
+            }}
+          >
+            RM
+          </span>
+          <span
+            sx={{
+              fontSize: [9, 10],
+              fontWeight: "bold",
+              color: "blue",
+              letterSpacing: -1,
+            }}
+          >
+            59
+          </span>
+          <span
+            sx={{
+              fontSize: 2,
+              color: "lightGrey",
+              letterSpacing: -1,
+            }}
+          >
+            / bulan *
+          </span>
+        </div>
+      </div>
+      <div
+        sx={{
+          fontSize: 0,
+          fontStyle: "italic",
+          color: "lightGrey",
+          fontWeight: 300,
+        }}
+      >
+        * harga sebelum 6% SST
       </div>
     </div>
   </div>
 )
 
 const CardButton = () => (
-  <div sx={{ textAlign: "left" }}>
-    <button
+  <a
+    href="https://unifi.com.my/unifi-en/ijoin/slof-jasa.page"
+    sx={{
+      borderColor: "orange",
+      borderStyle: "solid",
+      borderWidth: 1,
+      color: "white",
+      bg: "orange",
+
+      letterSpacing: 1,
+      borderRadius: 4,
+      mx: 3,
+      px: 3,
+      py: [3],
+
+      mt: [2, 4],
+      boxSizing: "border-box",
+      display: "inline-block",
+      width: "100%",
+      textAlign: "center",
+      boxShadow: "-3px 0px 2px hsl(0, 0%, 70%)",
+    }}
+  >
+    <div sx={{ fontSize: [3, 4], fontWeight: 600 }}>
+      Daftar Sekarang
+      <svg
+        sx={{ fill: "white" }}
+        preserveAspectRatio="xMidYMid meet"
+        height="1em"
+        width="1em"
+        viewBox="0 0 40 40"
+        style={{ verticalAlign: "middle" }}
+      >
+        <g>
+          <path d="m20 6.6l13.4 13.4-13.4 13.4-2.3-2.4 9.3-9.4h-20.4v-3.2h20.4l-9.3-9.4z"></path>
+        </g>
+      </svg>
+    </div>
+    <div
       sx={{
-        appearance: "none",
-        display: "inline-block",
-        textAlign: "right",
-        textDecoration: "none",
-        boxSizing: "border-box",
-        m: 0,
-        ml: [4, 3],
-        px: 3,
-        py: [3],
-        // boxShadow: "-3px 0px 6px hsl(0, 0%, 70%)",
-        boxShadow: "-3px 0px 2px hsl(0, 0%, 70%)",
-        border: 0,
-        fontFamily: "body",
-        bg: "orange",
-        color: "white",
-        borderRadius: 4,
-        width: "100%",
-        cursor: "pointer",
+        fontSize: [0, 1],
+        lineHeight: 1,
+        color: "faintOrange",
+        fontWeight: 300,
       }}
     >
-      <div sx={{ fontWeight: "bold", fontSize: [2, 3] }}>DAFTAR ONLINE</div>
-      <div sx={{ fontSize: [0, 1], lineHeight: 1, color: "faintOrange" }}>
-        Kad SIM dihantar dalam masa 2 hari
-      </div>
-    </button>
-  </div>
+      Kad SIM dihantar tanpa bayaran
+    </div>
+  </a>
 )
 
 const MoreItems = () => {
@@ -153,11 +187,11 @@ const MoreItems = () => {
       ) : (
         <>
           <KelebihanListItem>
-            Hotspot 10GB;{" "}
+            Hotspot 10GB percuma{" "}
             <span
               sx={{ color: "lightGrey", fontSize: [0, 1], fontWeight: 400 }}
             >
-              seterusnya RM8/500MB
+              setiap bulan
             </span>
           </KelebihanListItem>
           <KelebihanListItem>
@@ -166,7 +200,12 @@ const MoreItems = () => {
               sx={{ color: "text", textDecoration: "underline" }}
               href="https://unifi.com.my/personal/mobile/roaming"
             >
-              Roaming RM38/sehari
+              Parayauan Antarabangsa{" "}
+              <span
+                sx={{ color: "lightGrey", fontSize: [0, 1], fontWeight: 400 }}
+              >
+                tersedia ada
+              </span>
             </a>
           </KelebihanListItem>
           <KelebihanListItem>
@@ -175,11 +214,11 @@ const MoreItems = () => {
               sx={{ color: "text", textDecoration: "underline" }}
               href="https://unifi.com.my/personal/mobile/international-direct-dial"
             >
-              Kadar IDD{" "}
+              Perkhidmatan IDD{" "}
               <span
                 sx={{ color: "lightGrey", fontSize: [0, 1], fontWeight: 400 }}
               >
-                yang berpatutan
+                ke seluruh dunia
               </span>
             </a>
           </KelebihanListItem>
@@ -211,7 +250,7 @@ const CardList = () => (
     <KelebihanListItem>
       Tanpa kontrak{"; "}
       <span sx={{ color: "lightGrey", fontSize: [0, 1], fontWeight: 400 }}>
-        batal bila-bila masa
+        tiada komitmen
       </span>
     </KelebihanListItem>
     <MoreItems />
@@ -225,27 +264,28 @@ export default () => (
       backgroundPosition: ["center", "center", "left"],
       backgroundSize: "cover",
       backgroundRepeat: "no-repeat",
-      // backgroundImage: `url("https://unifi.com.my/lsds/assets/personal/home/pek-jasa/img/pekjasa/campaign-masthead.jpg")`,
       backgroundImage: `url("/images/campaign-masthead.webp")`,
+      fontFamily: "body",
+      color: "text",
     }}
   >
     <div
       sx={{
-        bg: "black",
-        // opacity: [0.88, 0.6],
-        opacity: 0.6,
         position: ["absolute"],
         top: 0,
         bottom: 0,
         left: 0,
         right: 0,
         display: ["block", "block"],
+        backgroundImage: [
+          "linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.9))",
+        ],
       }}
     />
     <div
       sx={{
         py: [0, 5],
-        display: ["flex", "flex"],
+        display: "flex",
         width: "100%",
         maxWidth: 960,
         m: "auto",
@@ -261,14 +301,19 @@ export default () => (
             position: ["static", "relative"],
             left: 20,
             bg: "blue",
+            opacity: 0.9,
             color: "white",
             fontFamily: "body",
             px: 3,
+            py: 3,
+            // mr: [0, 3],
+            // maxWidth: "30em",
           }}
         >
           <PenjawatAwam />
         </div>
       </div>
+      {/* <div sx={{ width: 30 }}></div> */}
       <div
         sx={{
           position: ["relative", "sticky"],
@@ -281,13 +326,13 @@ export default () => (
           width: "75%",
           borderRadius: 4,
           mr: [0, 3],
+          boxShadow:
+            "0px 2px 4px rgba(46, 41, 51, 0.08) , 0px 0px 3px rgba(46, 41, 51, 0.08)",
         }}
       >
         <Price />
         <CardList />
-        <a href="https://unifi.com.my/unifi-en/ijoin/slof-jasa.page">
-          <CardButton />
-        </a>
+        <CardButton />
       </div>
     </div>
   </div>
