@@ -53,7 +53,7 @@ export default () => {
           color: "blue",
           fontSize: 0,
           fontWeight: 600,
-          maxWidth: 480,
+          maxWidth: [480],
           m: "auto",
           mt: [0, 5],
           display: ["block", "none"],
@@ -95,7 +95,7 @@ export default () => {
           sx={{
             maxWidth: 960,
             display: "flex",
-            justifyContent: "space-around",
+            justifyContent: ["flex-start", "space-around"],
             m: "auto",
           }}
         >
