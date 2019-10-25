@@ -9,7 +9,7 @@ const KelebihanListItem = ({ children }) => (
   <li
     sx={{
       mb: 2,
-      pb: 1,
+      pb: 2,
       display: "flex",
       color: "text",
       fontWeight: 500,

@@ -9,6 +9,7 @@ import Liputan from "../components/organisms/Liputan"
 import Langkah from "../components/organisms/Langkah"
 import Info from "../components/organisms/Info"
 import TanpaKontrak from "../components/organisms/TanpaKontrak"
+import Summary from "../components/organisms/Summary"
 import Terma from "../components/organisms/Terma"
 
 import { useScrollPosition } from "@n8tb1t/use-scroll-position"
@@ -34,6 +35,25 @@ export default () => {
       <Langkah />
       <Info />
       <TanpaKontrak />
+      <Summary />
+      <div
+        sx={{
+          fontFamily: "body",
+          bg: "white",
+          px: 3,
+          py: 4,
+          color: "text",
+          lineHeight: 1.6,
+        }}
+      >
+        <a
+          href="whatsapp://send?text=Diskaun ekslusive untuk Penjawat Awam"
+          data-action="share/whatsapp/share"
+        >
+          Share via Whatsapp
+        </a>
+        Kongsikan maklumat Pek Jasa di WhatsApp Group rakan sejawat anda
+      </div>
       <Terma />
     </div>
   )
