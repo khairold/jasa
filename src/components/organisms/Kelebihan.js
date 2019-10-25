@@ -3,6 +3,7 @@ import { jsx } from "theme-ui"
 
 export default () => (
   <div
+    id="kelebihan"
     sx={{
       pb: [5, 6],
       pt: 4,
@@ -37,19 +38,23 @@ export default () => (
       </div>
       <div
         sx={{
-          fontWeight: 300,
+          fontWeight: 400,
           fontSize: [2, 5],
           letterSpacing: 1,
           lineHeight: [1.2, 1.4],
           // textAlign: "left",
         }}
       >
-        Pek Jasa ialah tawaran eksklusif pelan pasca bayar unifi Mobile™ yang
-        direka khas untuk Penjawat Awam.
+        {/* Pek Jasa ialah tawaran eksklusif pelan pasca bayar unifi Mobile™ yang
+        direka khas untuk Penjawat Awam. */}
+        Pek Jasa ialah pelan pasca bayar unifi Mobile™ eksklusif buat Penjawat
+        Awam. Dengan <b>hanya RM59 sebulan</b>, anda layak menikmati pelan unifi
+        Mobile™ tanpa had yang bernilai{" "}
+        <span sx={{ textDecoration: "line-through" }}>RM99</span>.
       </div>
-      <div
+      {/* <div
         sx={{
-          fontSize: [5],
+          fontSize: [4],
           fontWeight: 700,
           letterSpacing: 1,
           mb: [2, 3],
@@ -60,7 +65,7 @@ export default () => (
       </div>
       <div
         sx={{
-          fontWeight: 300,
+          fontWeight: 400,
           fontSize: [2, 5],
           letterSpacing: 1,
           lineHeight: [1.2, 1.4],
@@ -68,8 +73,8 @@ export default () => (
         }}
       >
         Anda layak menikmati pelan unifi Mobile™ tanpa had yang bernilai{" "}
-        <span sx={{ textDecoration: "line-through" }}>RM99</span> dipasaran.
-      </div>
+        <span sx={{ textDecoration: "line-through" }}>RM99</span>.
+      </div> */}
       <div>
         <a
           href=""

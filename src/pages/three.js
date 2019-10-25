@@ -41,7 +41,7 @@ export default () => {
           fontFamily: "body",
           bg: "white",
           px: 3,
-          py: 4,
+          py: 5,
           color: "text",
           lineHeight: 1.6,
           display: ["block", "none"],

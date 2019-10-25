@@ -9,17 +9,21 @@ import Copy from "../../icons/Copy"
 import Play from "../../icons/Play"
 
 import { useInView } from "react-intersection-observer"
+import scrollTo from "gatsby-plugin-smoothscroll"
 
-const MenuBox = ({ children, Icon }) => (
+const MenuBox = ({ to, children, Icon }) => (
   <div
+    onClick={() => scrollTo(`#${to}`)}
     sx={{
       flex: 1,
       textAlign: "center",
       py: 3,
-      borderStyle: "solid",
+      borderRightStyle: "solid",
+      borderBottomStyle: "solid",
       borderColor: "faintBlue",
       borderWidth: 1,
       boxSizing: "border-box",
+      letterSpacing: 1,
     }}
   >
     <Icon sx={{ mb: 1 }} />
@@ -27,14 +31,16 @@ const MenuBox = ({ children, Icon }) => (
   </div>
 )
 
-const MenuList = ({ children, Icon }) => (
+const MenuList = ({ to, children }) => (
   <div
+    onClick={() => scrollTo(`#${to}`)}
     sx={{
       textAlign: "center",
       px: 1,
       py: 3,
       boxSizing: "border-box",
       bg: "white",
+      letterSpacing: 1,
     }}
   >
     <div sx={{ whiteSpace: "nowrap" }}>{children}</div>
@@ -61,14 +67,26 @@ export default ({ hideOnScroll }) => {
         }}
       >
         <div sx={{ display: "flex", width: "100%" }}>
-          <MenuBox Icon={ThumbsUp}>KELEBIHAN</MenuBox>
-          <MenuBox Icon={BarChart}>LIPUTAN</MenuBox>
-          <MenuBox Icon={Play}>LANGKAH</MenuBox>
+          <MenuBox to="kelebihan" Icon={ThumbsUp}>
+            KELEBIHAN
+          </MenuBox>
+          <MenuBox to="liputan" Icon={BarChart}>
+            LIPUTAN
+          </MenuBox>
+          <MenuBox to="langkah" Icon={Play}>
+            LANGKAH
+          </MenuBox>
         </div>
         <div sx={{ display: "flex" }}>
-          <MenuBox Icon={UserCheck}>KELAYAKAN</MenuBox>
-          <MenuBox Icon={Copy}>KEKAL NOMBOR</MenuBox>
-          <MenuBox Icon={UserPlus}>TAMBAH TALIAN</MenuBox>
+          <MenuBox to="kelayakan" Icon={UserCheck}>
+            KELAYAKAN
+          </MenuBox>
+          <MenuBox to="mnp" Icon={Copy}>
+            KEKAL NOMBOR
+          </MenuBox>
+          <MenuBox to="tambah" Icon={UserPlus}>
+            TAMBAH TALIAN
+          </MenuBox>
         </div>
       </div>
 
@@ -102,15 +120,16 @@ export default ({ hideOnScroll }) => {
             maxWidth: 960,
             display: "flex",
             justifyContent: ["flex-start", "space-around"],
+            alignItems: "baseline",
             m: "auto",
           }}
         >
-          <MenuList Icon={ThumbsUp}>KELEBIHAN</MenuList>
-          <MenuList Icon={BarChart}>LIPUTAN</MenuList>
-          <MenuList Icon={Play}>LANGKAH</MenuList>
-          <MenuList Icon={UserCheck}>KELAYAKAN</MenuList>
-          <MenuList Icon={Copy}>KEKAL NOMBOR</MenuList>
-          <MenuList Icon={UserPlus}>TAMBAH TALIAN</MenuList>
+          <MenuList to="kelebihan">KELEBIHAN</MenuList>·
+          <MenuList to="liputan">LIPUTAN</MenuList>·
+          <MenuList to="langkah">LANGKAH</MenuList>·
+          <MenuList to="kelayakan">KELAYAKAN</MenuList>·
+          <MenuList to="mnp">KEKAL NOMBOR</MenuList>·
+          <MenuList to="tambah">TAMBAH TALIAN</MenuList>
         </div>
       </div>
     </>

@@ -4,9 +4,9 @@ import { jsx } from "theme-ui"
 const InfoHeading = ({ children }) => (
   <h3
     sx={{
-      color: "black",
+      color: "text",
       fontSize: 5,
-      fontWeight: 700,
+      fontWeight: 900,
       textAlign: ["center", "left"],
     }}
   >
@@ -18,8 +18,9 @@ const InfoP = ({ children }) => (
   <p sx={{ color: "text", fontSize: 2 }}>{children}</p>
 )
 
-const InfoBox = ({ children }) => (
+const InfoBox = ({ id, children }) => (
   <div
+    id={id}
     sx={{
       px: [3, 4],
       py: 4,
@@ -66,7 +67,7 @@ export default () => (
       color: "text",
     }}
   >
-    <InfoBox>
+    <InfoBox id="kelayakan">
       <InfoHeading>Kelayakan</InfoHeading>
       <InfoP>
         Anda layak untuk melanggan <b>satu</b> talian Pek Jasa sekiranya anda
@@ -85,7 +86,7 @@ export default () => (
         kami akan memeriksa kelayakan anda.
       </InfoQuote>
     </InfoBox>
-    <InfoBox>
+    <InfoBox id="mnp">
       <InfoHeading>Kekal Nombor</InfoHeading>
       <InfoP>
         Anda boleh mengekalkan nombor telefon dari pengendali talian mudah alih
@@ -101,7 +102,7 @@ export default () => (
         alih anda.
       </InfoQuote>
     </InfoBox>
-    <InfoBox>
+    <InfoBox id="tambah">
       <InfoHeading>Tambah Talian</InfoHeading>
       <InfoP>
         Anda boleh menambah sehingga <b>empat</b> talian di bawah akaun yang
@@ -112,16 +113,16 @@ export default () => (
           <b>RM99</b>: Tanpa had data, panggilan & SMS
         </li>
         <li sx={{ mb: 1, listStyleType: "none" }}>
-          <b>RM59</b>: 10GB data, 100 minit , 25 SMS
+          <b>RM59</b>: 10GB data, 100 minit, 25 SMS
         </li>
         <li sx={{ mb: 1, listStyleType: "none" }}>
-          <b>RM39</b>: 5GB data, 50 minit , 25 SMS
+          <b>RM39</b>: 5GB data, 50 minit, 25 SMS
         </li>
         <li sx={{ mb: 1, listStyleType: "none" }}>
-          <b>RM29</b>: 3GB data, 50 minit , 25 SMS
+          <b>RM29</b>: 3GB data, 50 minit, 25 SMS
         </li>
         <li sx={{ mb: 1, listStyleType: "none" }}>
-          <b>RM19</b>: 2GB data, 5 minit , 25 SMS
+          <b>RM19</b>: 2GB data, 5 minit, 25 SMS
         </li>
       </ul>
     </InfoBox>

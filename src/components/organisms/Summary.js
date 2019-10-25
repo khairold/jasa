@@ -37,7 +37,7 @@ export default () => (
         lineHeight: 1,
       }}
     >
-      Tawaran sah sehingga 31 Disember 2019
+      Tawaran sah jika anda melanggan sebelum 31 Disember 2019
     </div>
 
     <div

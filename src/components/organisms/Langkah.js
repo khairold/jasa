@@ -146,7 +146,7 @@ const DaftarSekarang = () => (
 )
 
 export default () => (
-  <div sx={{ fontFamily: "body", color: "text", py: [4, 5] }}>
+  <div id="langkah" sx={{ fontFamily: "body", color: "text", py: [4, 5] }}>
     <h3
       sx={{
         px: [3, 0],

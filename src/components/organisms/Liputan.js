@@ -3,6 +3,7 @@ import { jsx } from "theme-ui"
 
 export default () => (
   <div
+    id="liputan"
     sx={{
       py: [6],
       display: "flex",
@@ -37,7 +38,7 @@ export default () => (
       </div>
       <div
         sx={{
-          fontWeight: 300,
+          fontWeight: 400,
           fontSize: [2, 5],
           letterSpacing: 1,
           lineHeight: [1.2, 1.4],

@@ -20,8 +20,8 @@ const KelebihanListItem = ({ children }) => (
     >
       ✓
     </span> */}
-    <Check sx={{ color: "blue", mr: 2 }} />
-    <div sx={{ fontSize: [3] }}>{children}</div>
+    <Check sx={{ size: 22, color: "blue", mr: 2 }} />
+    <div sx={{ fontSize: [2] }}>{children}</div>
   </li>
 )
 
@@ -228,7 +228,7 @@ const MoreItems = () => {
 
 const CardList = () => (
   <ul
-    sx={{ pl: 3, pt: 0, pb: [3, 4], m: 0, mt: 0 }}
+    sx={{ pl: 3, pt: 1, pb: [3, 4], m: 0, mt: 0 }}
     style={{ listStyleType: "none" }}
   >
     <KelebihanListItem>
@@ -241,7 +241,7 @@ const CardList = () => (
     <KelebihanListItem>
       Tanpa had
       <div sx={{ color: "lightGrey", fontSize: [1], fontWeight: 400 }}>
-        data, panggilan & SMS
+        data, panggilan, dan SMS
       </div>
     </KelebihanListItem>
     <KelebihanListItem>
@@ -317,9 +317,9 @@ export default () => (
           top: [-42, -42],
           py: 4,
           bg: "white",
-          maxWidth: [320],
+          // maxWidth: [320],
           boxSizing: "border-box",
-          width: "80%",
+          width: "84%",
           // borderRadius: 4,
           mr: [0, 3],
           boxShadow:
