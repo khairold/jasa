@@ -2,7 +2,16 @@
 import { jsx } from "theme-ui"
 
 const InfoHeading = ({ children }) => (
-  <h3 sx={{ color: "black", fontSize: 3, fontWeight: 700 }}>{children}</h3>
+  <h3
+    sx={{
+      color: "black",
+      fontSize: 5,
+      fontWeight: 700,
+      textAlign: ["center", "left"],
+    }}
+  >
+    {children}
+  </h3>
 )
 
 const InfoP = ({ children }) => (
@@ -12,7 +21,7 @@ const InfoP = ({ children }) => (
 const InfoBox = ({ children }) => (
   <div
     sx={{
-      px: [4, 4],
+      px: [3, 4],
       py: 4,
       lineHeight: 1.6,
       borderColor: "backGroundGrey",

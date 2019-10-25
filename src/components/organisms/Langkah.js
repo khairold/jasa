@@ -88,13 +88,13 @@ const Langkah = ({ first, last, title, subtitle, sequence, icon }) => {
             justifyContent: ["flex-start", "center"],
           }}
         >
-          <Icon sx={{ size: 24, color: "text", mr: 2 }} />
-          <div sx={{ fontWeight: 500, fontSize: 2 }}>{title}</div>
+          {/* <Icon sx={{ size: 24, color: "text", mr: 2 }} /> */}
+          <div sx={{ fontWeight: 500, fontSize: 4 }}>{title}</div>
         </div>
         <div
           sx={{
             maxWidth: "14rem",
-            fontWeight: 300,
+            fontWeight: 400,
             fontSize: 1,
             textAlign: ["left", "center"],
             // bg: "blue",
@@ -152,7 +152,7 @@ export default () => (
         mt: 4,
         mb: [4, 5],
         textAlign: ["center", "center"],
-        fontSize: [7, 7],
+        fontSize: [6],
         lineHeight: 1,
         fontWeight: "900",
       }}

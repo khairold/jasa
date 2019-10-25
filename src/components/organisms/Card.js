@@ -3,6 +3,7 @@ import React, { useState } from "react"
 import { jsx } from "theme-ui"
 import KhabarBaik from "../molecules/KhabarBaik"
 import PenjawatAwam from "../molecules/PenjawatAwam"
+import Check from "../../icons/Check"
 
 const KelebihanListItem = ({ children }) => (
   <li
@@ -14,22 +15,24 @@ const KelebihanListItem = ({ children }) => (
       fontWeight: 500,
     }}
   >
-    <span
+    {/* <span
       sx={{ color: "blue", fontSize: 3, mr: 1, position: "relative", top: -1 }}
     >
       ✓
-    </span>
-    <div sx={{ fontSize: [1, 2, 2] }}>{children}</div>
+    </span> */}
+    <Check sx={{ color: "blue", mr: 2 }} />
+    <div sx={{ fontSize: [3] }}>{children}</div>
   </li>
 )
 
 const Price = () => (
-  <div sx={{ textAlign: "", pl: 4 }}>
+  <div sx={{ textAlign: "center", pl: 0 }}>
     <div
       sx={{
-        textAlign: "",
-        color: "blue",
-        display: "flex",
+        textAlign: "center",
+        color: "text",
+        // display: "flex",
+        width: "100%",
         alignItems: "baseline",
         lineHeight: 1,
       }}
@@ -41,17 +44,17 @@ const Price = () => (
       </span>
       <span
         sx={{
-          ml: 1,
+          // ml: 1,
           fontSize: [2, 3],
           fontWeight: 400,
-          color: "blue",
+          color: "text",
           letterSpacing: -1,
         }}
       >
         Pek Jasa
       </span>
     </div>
-    <div
+    {/* <div
       sx={{
         fontSize: [0, 1],
         color: "lightGrey",
@@ -59,46 +62,46 @@ const Price = () => (
       }}
     >
       Pelan pasca bayar
-    </div>
-    <div sx={{ py: [2, 3] }}>
+    </div> */}
+    <div sx={{ py: [3] }}>
       <div
-        sx={{
-          width: "100%",
-          display: "flex",
-          justifyContent: "space-between",
-        }}
+        sx={
+          {
+            // width: "100%",
+            // display: "flex",
+            // justifyContent: "space-between",
+          }
+        }
       >
-        <div>
-          <span
-            sx={{
-              color: "blue",
-              position: "relative",
-              top: [-34, -40],
-              letterSpacing: -1,
-            }}
-          >
-            RM
-          </span>
-          <span
-            sx={{
-              fontSize: [9, 10],
-              fontWeight: "bold",
-              color: "blue",
-              letterSpacing: -1,
-            }}
-          >
-            59
-          </span>
-          <span
-            sx={{
-              fontSize: 2,
-              color: "lightGrey",
-              letterSpacing: -1,
-            }}
-          >
-            / bulan *
-          </span>
-        </div>
+        <span
+          sx={{
+            color: "blue",
+            position: "relative",
+            top: [-46],
+            letterSpacing: -1,
+          }}
+        >
+          RM
+        </span>
+        <span
+          sx={{
+            fontSize: [11],
+            fontWeight: "bold",
+            color: "blue",
+            letterSpacing: -1,
+          }}
+        >
+          59
+        </span>
+        <span
+          sx={{
+            fontSize: 2,
+            color: "lightGrey",
+            letterSpacing: -1,
+          }}
+        >
+          / bulan *
+        </span>
       </div>
       <div
         sx={{
@@ -174,7 +177,7 @@ const MoreItems = () => {
         <li
           sx={{
             mt: 1,
-            ml: 3,
+            ml: 4,
             mb: 2,
             fontSize: [1],
             color: "blue",
@@ -188,11 +191,9 @@ const MoreItems = () => {
         <>
           <KelebihanListItem>
             Hotspot 10GB percuma{" "}
-            <span
-              sx={{ color: "lightGrey", fontSize: [0, 1], fontWeight: 400 }}
-            >
+            <div sx={{ color: "lightGrey", fontSize: [1], fontWeight: 400 }}>
               setiap bulan
-            </span>
+            </div>
           </KelebihanListItem>
           <KelebihanListItem>
             <a
@@ -200,13 +201,11 @@ const MoreItems = () => {
               sx={{ color: "text", textDecoration: "underline" }}
               href="https://unifi.com.my/personal/mobile/roaming"
             >
-              Parayauan Antarabangsa{" "}
-              <span
-                sx={{ color: "lightGrey", fontSize: [0, 1], fontWeight: 400 }}
-              >
-                tersedia ada
-              </span>
+              Parayauan Antarabangsa
             </a>
+            <div sx={{ color: "lightGrey", fontSize: [1], fontWeight: 400 }}>
+              tersedia ada
+            </div>
           </KelebihanListItem>
           <KelebihanListItem>
             <a
@@ -215,12 +214,10 @@ const MoreItems = () => {
               href="https://unifi.com.my/personal/mobile/international-direct-dial"
             >
               Perkhidmatan IDD{" "}
-              <span
-                sx={{ color: "lightGrey", fontSize: [0, 1], fontWeight: 400 }}
-              >
-                ke seluruh dunia
-              </span>
             </a>
+            <div sx={{ color: "lightGrey", fontSize: [1], fontWeight: 400 }}>
+              ke seluruh dunia
+            </div>
           </KelebihanListItem>
         </>
       )}
@@ -229,29 +226,25 @@ const MoreItems = () => {
 }
 
 const CardList = () => (
-  <ul
-    sx={{ fontSize: 1, pl: 3, py: [3, 4], m: 0, mt: 0 }}
-    style={{ listStyleType: "none" }}
-  >
+  <ul sx={{ pl: 3, py: [3, 4], m: 0, mt: 0 }} style={{ listStyleType: "none" }}>
     <KelebihanListItem>
       Diskaun RM40
-      <span sx={{ color: "lightGrey", fontSize: [0, 1], fontWeight: 400 }}>
-        {"; "}
+      <div sx={{ color: "lightGrey", fontSize: [1], fontWeight: 400 }}>
         harga biasa
         <span style={{ textDecoration: "line-through" }}> RM99</span>
-      </span>
+      </div>
     </KelebihanListItem>
     <KelebihanListItem>
-      Tanpa had{" "}
-      <span sx={{ color: "lightGrey", fontSize: [0, 1], fontWeight: 400 }}>
+      Tanpa had
+      <div sx={{ color: "lightGrey", fontSize: [1], fontWeight: 400 }}>
         data, panggilan & SMS
-      </span>
+      </div>
     </KelebihanListItem>
     <KelebihanListItem>
-      Tanpa kontrak{"; "}
-      <span sx={{ color: "lightGrey", fontSize: [0, 1], fontWeight: 400 }}>
+      Tanpa kontrak
+      <div sx={{ color: "lightGrey", fontSize: [1], fontWeight: 400 }}>
         tiada komitmen
-      </span>
+      </div>
     </KelebihanListItem>
     <MoreItems />
   </ul>
@@ -317,20 +310,41 @@ export default () => (
       <div
         sx={{
           position: ["relative", "sticky"],
-          top: [-30, -42],
-          pt: 3,
-          pb: 3,
+          top: [-42, -42],
+          py: 4,
           bg: "white",
-          maxWidth: [300, 320],
+          maxWidth: [320],
           boxSizing: "border-box",
-          width: "75%",
-          borderRadius: 4,
+          width: "80%",
+          // borderRadius: 4,
           mr: [0, 3],
           boxShadow:
             "0px 2px 4px rgba(46, 41, 51, 0.08) , 0px 0px 3px rgba(46, 41, 51, 0.08)",
         }}
       >
         <Price />
+        <div sx={{ py: 3 }}>
+          <hr
+            sx={{
+              m: 0,
+              borderTopColor: "backGroundGrey",
+              borderTopWidth: 1,
+            }}
+          />
+          <div
+            sx={{
+              color: "lightGrey",
+              textAlign: "center",
+              letterSpacing: 1.2,
+              fontSize: 1,
+              zIndex: 1,
+              position: "relative",
+              top: -10,
+            }}
+          >
+            <span sx={{ bg: "white", px: 3 }}>PELAN PASCA BAYAR</span>
+          </div>
+        </div>
         <CardList />
         <CardButton />
       </div>

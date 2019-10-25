@@ -4,7 +4,8 @@ import { jsx } from "theme-ui"
 export default () => (
   <div
     sx={{
-      py: [5, 6],
+      pb: [5, 6],
+      pt: 4,
       display: "flex",
       justifyContent: "center",
       alignItems: "center",
@@ -44,8 +45,30 @@ export default () => (
         }}
       >
         Pek Jasa ialah tawaran eksklusif pelan pasca bayar unifi Mobile™ yang
-        direka khas untuk Penjawat Awam. Dengan hanya RM59/sebulan, anda layak
-        menikmati pelan unifi Mobile™ tanpa had yang bernilai RM99 dipasaran.
+        direka khas untuk Penjawat Awam.
+      </div>
+      <div
+        sx={{
+          fontSize: [5],
+          fontWeight: 900,
+          letterSpacing: 1,
+          mb: [2, 3],
+          mt: [4, 0],
+        }}
+      >
+        Hanya RM59 sebulan
+      </div>
+      <div
+        sx={{
+          fontWeight: 300,
+          fontSize: [2, 5],
+          letterSpacing: 1,
+          lineHeight: [1.2, 1.4],
+          // textAlign: "left",
+        }}
+      >
+        Anda layak menikmati pelan unifi Mobile™ tanpa had yang bernilai RM99
+        dipasaran.
       </div>
       <div>
         <a

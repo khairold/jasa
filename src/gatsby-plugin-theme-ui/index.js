@@ -4,7 +4,7 @@ export default {
     heading: "roboto, system-ui, sans-serif",
     monospace: "Menlo, monospace",
   },
-  fontSizes: [12, 14, 16, 18, 20, 24, 30, 36, 48, 60, 72],
+  fontSizes: [12, 14, 16, 18, 20, 24, 30, 36, 48, 60, 72, 84],
   colors: {
     orange: "hsl(16, 88%, 55%)",
     blue: "hsl(212, 74%, 34%)",

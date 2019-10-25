@@ -43,8 +43,7 @@ export default () => (
           lineHeight: [1.2, 1.4],
         }}
       >
-        Tiada risiko. Tamatkan langganan Pek Jasa pada bila-bila masa tanpa
-        sebarang penalti.
+        Tiada risiko. Tamatkan langganan Pek Jasa bila-bila masa tanpa penalti.
       </div>
       <div>
         <a

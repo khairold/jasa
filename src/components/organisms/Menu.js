@@ -31,12 +31,12 @@ const MenuList = ({ children, Icon }) => (
   <div
     sx={{
       textAlign: "center",
-      p: 3,
+      px: 1,
+      py: 3,
       boxSizing: "border-box",
       bg: "white",
     }}
   >
-    <Icon sx={{ mb: 1 }} />
     <div sx={{ whiteSpace: "nowrap" }}>{children}</div>
   </div>
 )
@@ -75,6 +75,7 @@ export default ({ hideOnScroll }) => {
       <div
         sx={{
           bg: "white",
+          opacity: 0.95,
           fontFamily: "body",
           color: "blue",
           fontSize: 0,

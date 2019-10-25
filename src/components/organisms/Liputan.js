@@ -43,7 +43,7 @@ export default () => (
           lineHeight: [1.2, 1.4],
         }}
       >
-        Anda sentiasa boleh berhubung dari mana-mana sahaja. Periksa liputan di{" "}
+        Anda boleh berhubung dari mana-mana sahaja. Periksa liputan di{" "}
         <a
           sx={{ color: "text", textDecoration: "underline" }}
           href="https://unifi.com.my/unifi-en/personal/home/postpaid-coverage.page"
