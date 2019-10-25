@@ -44,15 +44,18 @@ export default () => {
           py: 4,
           color: "text",
           lineHeight: 1.6,
+          display: ["block", "none"],
         }}
       >
+        Kongsikan maklumat Pek Jasa di{" "}
         <a
-          href="whatsapp://send?text=Diskaun ekslusive untuk Penjawat Awam"
+          href="whatsapp://send?text=https://unifi.com.my/pekjasa Diskaun ekslusive untuk Penjawat Awam"
           data-action="share/whatsapp/share"
+          sx={{ color: "blue", textDecoration: "underline" }}
         >
-          Share via Whatsapp
-        </a>
-        Kongsikan maklumat Pek Jasa di WhatsApp Group rakan sejawat anda
+          WhatsApp Group
+        </a>{" "}
+        rakan sejawat anda
       </div>
       <Terma />
     </div>
