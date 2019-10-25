@@ -56,13 +56,13 @@ export default () => (
             bg: "white",
             fontWeight: 600,
             letterSpacing: 1,
-            borderRadius: 4,
+            // borderRadius: 4,
             px: 3,
             py: [3, 3],
             fontSize: [3, 3],
             mt: [4, 4],
             boxSizing: "border-box",
-            display: "inline-block",
+            display: "block",
           }}
         >
           Daftar Sekarang

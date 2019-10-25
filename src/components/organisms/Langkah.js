@@ -93,7 +93,7 @@ const Langkah = ({ first, last, title, subtitle, sequence, icon }) => {
         </div>
         <div
           sx={{
-            maxWidth: "14rem",
+            maxWidth: "15rem",
             fontWeight: 400,
             fontSize: 1,
             textAlign: ["left", "center"],
@@ -119,13 +119,14 @@ const DaftarSekarang = () => (
       bg: "orange",
       fontWeight: 600,
       letterSpacing: 1,
-      borderRadius: 4,
+      // borderRadius: 4,
       px: 3,
       py: [3, 3],
       fontSize: [3, 3],
       boxSizing: "border-box",
-      display: "inline-block",
+      display: "block",
       textAlign: "center",
+      mx: 3,
     }}
   >
     Daftar Sekarang

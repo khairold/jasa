@@ -50,7 +50,7 @@ export default () => (
       <div
         sx={{
           fontSize: [5],
-          fontWeight: 900,
+          fontWeight: 700,
           letterSpacing: 1,
           mb: [2, 3],
           mt: [4, 0],
@@ -67,8 +67,8 @@ export default () => (
           // textAlign: "left",
         }}
       >
-        Anda layak menikmati pelan unifi Mobile™ tanpa had yang bernilai RM99
-        dipasaran.
+        Anda layak menikmati pelan unifi Mobile™ tanpa had yang bernilai{" "}
+        <span sx={{ textDecoration: "line-through" }}>RM99</span> dipasaran.
       </div>
       <div>
         <a
@@ -81,13 +81,13 @@ export default () => (
             bg: "blue",
             fontWeight: 600,
             letterSpacing: 1,
-            borderRadius: 4,
+            // borderRadius: 4,
             px: 3,
             py: [3, 3],
             fontSize: [3, 3],
             mt: [4, 4],
             boxSizing: "border-box",
-            display: "inline-block",
+            display: "block",
           }}
         >
           Daftar Sekarang

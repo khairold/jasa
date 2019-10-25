@@ -89,6 +89,7 @@ const Price = () => (
             fontWeight: "bold",
             color: "blue",
             letterSpacing: -1,
+            lineHeight: 1,
           }}
         >
           59
@@ -128,7 +129,7 @@ const CardButton = () => (
       bg: "orange",
 
       letterSpacing: 1,
-      borderRadius: 4,
+      // borderRadius: 4,
       mx: 3,
       px: 3,
       py: [3],
@@ -226,7 +227,10 @@ const MoreItems = () => {
 }
 
 const CardList = () => (
-  <ul sx={{ pl: 3, py: [3, 4], m: 0, mt: 0 }} style={{ listStyleType: "none" }}>
+  <ul
+    sx={{ pl: 3, pt: 0, pb: [3, 4], m: 0, mt: 0 }}
+    style={{ listStyleType: "none" }}
+  >
     <KelebihanListItem>
       Diskaun RM40
       <div sx={{ color: "lightGrey", fontSize: [1], fontWeight: 400 }}>
@@ -323,7 +327,7 @@ export default () => (
         }}
       >
         <Price />
-        <div sx={{ py: 3 }}>
+        <div sx={{ pt: 4, pb: 3 }}>
           <hr
             sx={{
               m: 0,

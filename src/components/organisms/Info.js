@@ -107,23 +107,23 @@ export default () => (
         Anda boleh menambah sehingga <b>empat</b> talian di bawah akaun yang
         sama dari pelan unifi Mobile™ berikut:
       </InfoP>
-      <InfoUl>
-        <li sx={{ mb: 1 }}>
+      <ul sx={{ fontSize: 2, pl: 3 }}>
+        <li sx={{ mb: 1, listStyleType: "none" }}>
           <b>RM99</b>: Tanpa had data, panggilan & SMS
         </li>
-        <li sx={{ mb: 1 }}>
+        <li sx={{ mb: 1, listStyleType: "none" }}>
           <b>RM59</b>: 10GB data, 100 minit , 25 SMS
         </li>
-        <li sx={{ mb: 1 }}>
+        <li sx={{ mb: 1, listStyleType: "none" }}>
           <b>RM39</b>: 5GB data, 50 minit , 25 SMS
         </li>
-        <li sx={{ mb: 1 }}>
+        <li sx={{ mb: 1, listStyleType: "none" }}>
           <b>RM29</b>: 3GB data, 50 minit , 25 SMS
         </li>
-        <li sx={{ mb: 1 }}>
+        <li sx={{ mb: 1, listStyleType: "none" }}>
           <b>RM19</b>: 2GB data, 5 minit , 25 SMS
         </li>
-      </InfoUl>
+      </ul>
     </InfoBox>
   </div>
 )
