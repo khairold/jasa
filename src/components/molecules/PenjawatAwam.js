@@ -7,7 +7,7 @@ export default () => (
     <div
       sx={{
         fontWeight: [700, 700],
-        fontSize: [6],
+        fontSize: [7],
         mt: 2,
         // color: ["hsl(220, 88%, 88%)", "white"],
 
@@ -15,7 +15,7 @@ export default () => (
         lineHeight: 1,
       }}
     >
-      Diskaun eksklusif untuk Penjawat Awam
+      Eksklusif untuk Penjawat Awam
     </div>
     <div
       sx={{

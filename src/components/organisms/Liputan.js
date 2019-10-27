@@ -5,23 +5,19 @@ export default () => (
   <div
     id="liputan"
     sx={{
-      py: [6],
-      display: "flex",
-      justifyContent: "center",
-      alignItems: "center",
-      flexDirection: ["column", "row"],
+      py: 6,
       bg: "white",
       color: "text",
       fontFamily: "body",
       backgroundColor: "rgb(248, 249, 250)",
+      px: 4,
     }}
   >
     <div
       sx={{
-        ml: [3, 4],
-        mr: [3, 0],
-        maxWidth: "38rem",
-        textAlign: ["center", "left"],
+        textAlign: "center",
+        maxWidth: 720,
+        m: "auto",
       }}
     >
       <div
@@ -29,11 +25,10 @@ export default () => (
           fontSize: [7, 8],
           fontWeight: 900,
           letterSpacing: 1,
-          mb: [2, 3],
-          // mt: [4, 0],
+          mb: 3,
         }}
       >
-        Liputan di <br />
+        Liputan di <br sx={{ display: ["inline", "none"] }} />
         Seluruh Negara
       </div>
       <div
@@ -44,7 +39,9 @@ export default () => (
           lineHeight: [1.2, 1.4],
         }}
       >
-        Anda boleh berhubung dari mana-mana sahaja. Periksa liputan di{" "}
+        Anda boleh berhubung dari mana-mana sahaja.{" "}
+        <br sx={{ display: ["none", "inline"] }} />
+        Periksa liputan di{" "}
         <a
           sx={{ color: "text", textDecoration: "underline" }}
           href="https://unifi.com.my/unifi-en/personal/home/postpaid-coverage.page"

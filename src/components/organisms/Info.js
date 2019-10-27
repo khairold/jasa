@@ -22,7 +22,7 @@ const InfoBox = ({ id, children }) => (
   <div
     id={id}
     sx={{
-      px: [3, 4],
+      px: [4, 4],
       py: 4,
       lineHeight: 1.6,
       borderColor: "backGroundGrey",

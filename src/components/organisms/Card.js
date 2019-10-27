@@ -30,27 +30,26 @@ const Price = () => (
     <div
       sx={{
         textAlign: "center",
-        color: "text",
+        color: "blue",
         // display: "flex",
         width: "100%",
         alignItems: "baseline",
         lineHeight: 1,
       }}
     >
-      <span
-        sx={{ fontWeight: 900, fontSize: [4, 5], letterSpacing: -0.5, mr: 1 }}
-      >
-        unifi Mobile™ 99{" "}
+      <span sx={{ fontWeight: 500, fontSize: [5], letterSpacing: -0.5, mr: 1 }}>
+        unifi Mobile™
       </span>
       <span
         sx={{
           // ml: 1,
-          fontSize: [2, 3],
+          fontSize: [3],
           fontWeight: 400,
-          color: "text",
+          color: "blue",
           letterSpacing: -1,
         }}
       >
+        {" "}
         Pek Jasa
       </span>
     </div>
@@ -228,16 +227,18 @@ const MoreItems = () => {
 
 const CardList = () => (
   <ul
-    sx={{ pl: 3, pt: 1, pb: [3, 4], m: 0, mt: 0 }}
+    sx={{
+      // pl: 3,
+      pt: 1,
+      pb: [3, 4],
+      m: 0,
+      mt: 0,
+      width: "90%",
+      m: "auto",
+      // bg: "yellow",
+    }}
     style={{ listStyleType: "none" }}
   >
-    <KelebihanListItem>
-      Diskaun RM40
-      <div sx={{ color: "lightGrey", fontSize: [1], fontWeight: 400 }}>
-        harga biasa
-        <span style={{ textDecoration: "line-through" }}> RM99</span>
-      </div>
-    </KelebihanListItem>
     <KelebihanListItem>
       Tanpa had
       <div sx={{ color: "lightGrey", fontSize: [1], fontWeight: 400 }}>
@@ -248,6 +249,13 @@ const CardList = () => (
       Tanpa kontrak
       <div sx={{ color: "lightGrey", fontSize: [1], fontWeight: 400 }}>
         tiada komitmen
+      </div>
+    </KelebihanListItem>
+    <KelebihanListItem>
+      Diskaun RM40
+      <div sx={{ color: "lightGrey", fontSize: [1], fontWeight: 400 }}>
+        harga biasa
+        <span style={{ textDecoration: "line-through" }}> RM99</span>
       </div>
     </KelebihanListItem>
     <MoreItems />
@@ -317,7 +325,7 @@ export default () => (
           top: [-42, -42],
           py: 4,
           bg: "white",
-          // maxWidth: [320],
+          maxWidth: [340],
           boxSizing: "border-box",
           width: "84%",
           // borderRadius: 4,

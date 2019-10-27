@@ -47,10 +47,12 @@ export default () => (
       >
         {/* Pek Jasa ialah tawaran eksklusif pelan pasca bayar unifi Mobile™ yang
         direka khas untuk Penjawat Awam. */}
-        Pek Jasa ialah pelan pasca bayar unifi Mobile™ eksklusif buat Penjawat
+        {/* Pek Jasa ialah pelan pasca bayar unifi Mobile™ eksklusif buat Penjawat
         Awam. Dengan <b>hanya RM59 sebulan</b>, anda layak menikmati pelan unifi
         Mobile™ tanpa had yang bernilai{" "}
-        <span sx={{ textDecoration: "line-through" }}>RM99</span>.
+        <span sx={{ textDecoration: "line-through" }}>RM99</span>. */}
+        Pek Jasa adalah diskaun eksklusif buat Penjawat Awam untuk pelan pasaca
+        bayar unifi Mobile™.
       </div>
       {/* <div
         sx={{

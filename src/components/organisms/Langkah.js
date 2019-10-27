@@ -120,6 +120,7 @@ const DaftarSekarang = () => (
       fontWeight: 600,
       letterSpacing: 1,
       // borderRadius: 4,
+      maxWidth: 340,
       px: 3,
       py: [3, 3],
       fontSize: [3, 3],
@@ -146,14 +147,23 @@ const DaftarSekarang = () => (
 )
 
 export default () => (
-  <div id="langkah" sx={{ fontFamily: "body", color: "text", py: [4, 5] }}>
+  <div
+    id="langkah"
+    sx={{
+      fontFamily: "body",
+      color: "text",
+      py: [4, 5],
+      m: "auto",
+      maxWidth: 1024,
+    }}
+  >
     <h3
       sx={{
         px: [3, 0],
         mt: 4,
         mb: [4, 5],
         textAlign: ["center", "center"],
-        fontSize: [6],
+        fontSize: [6, 7],
         lineHeight: 1,
         fontWeight: "900",
       }}
