@@ -110,7 +110,7 @@ const Langkah = ({ first, last, title, subtitle, sequence, icon }) => {
 
 const DaftarSekarang = () => (
   <a
-    href=""
+    href="https://unifi.com.my/unifi-en/ijoin/slof-jasa.page"
     sx={{
       borderColor: "orange",
       borderStyle: "solid",
@@ -120,7 +120,7 @@ const DaftarSekarang = () => (
       fontWeight: 600,
       letterSpacing: 1,
       // borderRadius: 4,
-      maxWidth: 340,
+      // maxWidth: 340,
       px: 3,
       py: [3, 3],
       fontSize: [3, 3],
@@ -130,19 +130,31 @@ const DaftarSekarang = () => (
       mx: 3,
     }}
   >
-    Daftar Sekarang
-    <svg
-      sx={{ fill: "white" }}
-      preserveAspectRatio="xMidYMid meet"
-      height="1em"
-      width="1em"
-      viewBox="0 0 40 40"
-      style={{ verticalAlign: "middle" }}
+    <div>
+      Daftar Sekarang
+      <svg
+        sx={{ fill: "white" }}
+        preserveAspectRatio="xMidYMid meet"
+        height="1em"
+        width="1em"
+        viewBox="0 0 40 40"
+        style={{ verticalAlign: "middle" }}
+      >
+        <g>
+          <path d="m20 6.6l13.4 13.4-13.4 13.4-2.3-2.4 9.3-9.4h-20.4v-3.2h20.4l-9.3-9.4z"></path>
+        </g>
+      </svg>
+    </div>
+    <div
+      sx={{
+        fontSize: [0, 1],
+        lineHeight: 1,
+        color: "faintOrange",
+        fontWeight: 300,
+      }}
     >
-      <g>
-        <path d="m20 6.6l13.4 13.4-13.4 13.4-2.3-2.4 9.3-9.4h-20.4v-3.2h20.4l-9.3-9.4z"></path>
-      </g>
-    </svg>
+      Pendaftaran pantas dan mudah
+    </div>
   </a>
 )
 

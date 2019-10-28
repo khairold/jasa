@@ -24,6 +24,7 @@ const MenuBox = ({ to, children, Icon }) => (
       borderWidth: 1,
       boxSizing: "border-box",
       letterSpacing: 1,
+      cursor: "pointer",
     }}
   >
     <Icon sx={{ mb: 1 }} />
@@ -41,6 +42,7 @@ const MenuList = ({ to, children }) => (
       boxSizing: "border-box",
       bg: "white",
       letterSpacing: 1,
+      cursor: "pointer",
     }}
   >
     <div sx={{ whiteSpace: "nowrap" }}>{children}</div>

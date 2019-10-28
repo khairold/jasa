@@ -70,7 +70,7 @@ export default () => (
     </div>
     <div>
       <a
-        href=""
+        href="https://unifi.com.my/unifi-en/ijoin/slof-jasa.page"
         sx={{
           borderColor: "black",
           borderStyle: "solid",
@@ -89,19 +89,31 @@ export default () => (
           textAlign: "center",
         }}
       >
-        Daftar Sekarang
-        <svg
-          sx={{ fill: "white" }}
-          preserveAspectRatio="xMidYMid meet"
-          height="1em"
-          width="1em"
-          viewBox="0 0 40 40"
-          style={{ verticalAlign: "middle" }}
+        <div>
+          Daftar Sekarang
+          <svg
+            sx={{ fill: "white" }}
+            preserveAspectRatio="xMidYMid meet"
+            height="1em"
+            width="1em"
+            viewBox="0 0 40 40"
+            style={{ verticalAlign: "middle" }}
+          >
+            <g>
+              <path d="m20 6.6l13.4 13.4-13.4 13.4-2.3-2.4 9.3-9.4h-20.4v-3.2h20.4l-9.3-9.4z"></path>
+            </g>
+          </svg>
+        </div>
+        <div
+          sx={{
+            fontSize: [0, 1],
+            lineHeight: 1,
+            color: "white",
+            fontWeight: 300,
+          }}
         >
-          <g>
-            <path d="m20 6.6l13.4 13.4-13.4 13.4-2.3-2.4 9.3-9.4h-20.4v-3.2h20.4l-9.3-9.4z"></path>
-          </g>
-        </svg>
+          Jangan terlepas tawaran terhad ini
+        </div>
       </a>
     </div>
   </div>

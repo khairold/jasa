@@ -46,12 +46,6 @@ export default () => (
           // textAlign: "left",
         }}
       >
-        {/* Pek Jasa ialah tawaran eksklusif pelan pasca bayar unifi Mobile™ yang
-        direka khas untuk Penjawat Awam. */}
-        {/* Pek Jasa ialah pelan pasca bayar unifi Mobile™ eksklusif buat Penjawat
-        Awam. Dengan <b>hanya RM59 sebulan</b>, anda layak menikmati pelan unifi
-        Mobile™ tanpa had yang bernilai{" "}
-        <span sx={{ textDecoration: "line-through" }}>RM99</span>. */}
         Pek Jasa ialah pelan pasca bayar unifi Mobile™ eksklusif untuk Penjawat
         Awam dengan harga istimewa <b>RM59</b> sebulan.
       </div>
@@ -80,7 +74,7 @@ export default () => (
       </div> */}
       <div>
         <a
-          href=""
+          href="https://unifi.com.my/unifi-en/ijoin/slof-jasa.page"
           sx={{
             borderColor: "blue",
             borderStyle: "solid",
@@ -98,19 +92,31 @@ export default () => (
             display: "block",
           }}
         >
-          Daftar sekarang
-          <svg
-            sx={{ fill: "white" }}
-            preserveAspectRatio="xMidYMid meet"
-            height="1em"
-            width="1em"
-            viewBox="0 0 40 40"
-            style={{ verticalAlign: "middle" }}
+          <div>
+            Daftar sekarang
+            <svg
+              sx={{ fill: "white" }}
+              preserveAspectRatio="xMidYMid meet"
+              height="1em"
+              width="1em"
+              viewBox="0 0 40 40"
+              style={{ verticalAlign: "middle" }}
+            >
+              <g>
+                <path d="m20 6.6l13.4 13.4-13.4 13.4-2.3-2.4 9.3-9.4h-20.4v-3.2h20.4l-9.3-9.4z"></path>
+              </g>
+            </svg>
+          </div>
+          <div
+            sx={{
+              fontSize: [0, 1],
+              lineHeight: 1,
+              color: "white",
+              fontWeight: 300,
+            }}
           >
-            <g>
-              <path d="m20 6.6l13.4 13.4-13.4 13.4-2.3-2.4 9.3-9.4h-20.4v-3.2h20.4l-9.3-9.4z"></path>
-            </g>
-          </svg>
+            Pendaftaran online 5 minit
+          </div>
         </a>
       </div>
     </div>

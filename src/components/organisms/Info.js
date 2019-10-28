@@ -89,8 +89,8 @@ export default () => (
     <InfoBox id="mnp">
       <InfoHeading>Kekal Nombor</InfoHeading>
       <InfoP>
-        Anda boleh mengekalkan nombor telefon dari pengendali talian mudah alih
-        semasa kepada Pek Jasa sekiranya anda:
+        Anda boleh mengekalkan nombor telefon anda sekarang{" "}
+        <b>tanpa sebarang bayaran</b> sekiranya anda:
       </InfoP>
       <InfoUl>
         <li sx={{ mb: 1 }}>Telah melunaskan kesemua baki;</li>
@@ -99,7 +99,7 @@ export default () => (
       </InfoUl>
       <InfoQuote>
         Kami akan menguruskan pemindahan nombor dari pengendali talian mudah
-        alih anda.
+        alih anda. Pemindahan selalunya memakan masa kurang dari 2 hari.
       </InfoQuote>
     </InfoBox>
     <InfoBox id="tambah">
@@ -126,6 +126,10 @@ export default () => (
           <b>RM19</b>: 2GB data, 5 minit, 25 SMS
         </li>
       </ul>
+      <InfoQuote>
+        Penambahan talian boleh dibuat semasa anda melengkapkan langganan Pek
+        Jasa nanti.
+      </InfoQuote>
     </InfoBox>
   </div>
 )
