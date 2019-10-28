@@ -129,13 +129,16 @@ const CardButton = () => (
 
       letterSpacing: 1,
       // borderRadius: 4,
-      mx: 3,
+      // ml: 2,
+      position: "relative",
+      left: 16,
+
       px: 3,
       py: [3],
 
       mt: [2, 4],
       boxSizing: "border-box",
-      display: "inline-block",
+      display: "block",
       width: "100%",
       textAlign: "center",
       boxShadow: "-3px 0px 2px hsl(0, 0%, 70%)",

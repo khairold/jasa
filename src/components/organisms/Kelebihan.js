@@ -14,6 +14,7 @@ export default () => (
       bg: "white",
       color: "text",
       fontFamily: "body",
+      boxSizing: "border-box",
     }}
   >
     <div
@@ -51,8 +52,8 @@ export default () => (
         Awam. Dengan <b>hanya RM59 sebulan</b>, anda layak menikmati pelan unifi
         Mobile™ tanpa had yang bernilai{" "}
         <span sx={{ textDecoration: "line-through" }}>RM99</span>. */}
-        Pek Jasa adalah diskaun eksklusif buat Penjawat Awam untuk pelan pasaca
-        bayar unifi Mobile™.
+        Pek Jasa ialah pelan pasca bayar unifi Mobile™ eksklusif untuk Penjawat
+        Awam dengan harga istimewa <b>RM59</b> sebulan.
       </div>
       {/* <div
         sx={{
@@ -97,7 +98,7 @@ export default () => (
             display: "block",
           }}
         >
-          Daftar Sekarang
+          Daftar sekarang
           <svg
             sx={{ fill: "white" }}
             preserveAspectRatio="xMidYMid meet"
@@ -112,6 +113,9 @@ export default () => (
           </svg>
         </a>
       </div>
+    </div>
+    <div sx={{ color: "grey", mt: 2, fontSize: 1, fontStyle: "italic" }}>
+      Harga biasa pelan tanpa had unifi Mobile™ ialah RM99
     </div>
   </div>
 )
