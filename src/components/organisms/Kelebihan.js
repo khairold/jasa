@@ -5,12 +5,12 @@ export default () => (
   <div
     id="kelebihan"
     sx={{
-      pb: [5, 6],
-      pt: 4,
+      pb: [5, 5],
+      pt: [4, 6],
       display: "flex",
       justifyContent: "center",
       alignItems: "center",
-      flexDirection: ["column", "row"],
+      flexDirection: ["column"],
       bg: "white",
       color: "text",
       fontFamily: "body",
@@ -21,8 +21,8 @@ export default () => (
       sx={{
         ml: [3, 4],
         mr: [3, 0],
-        maxWidth: "38rem",
-        textAlign: ["center", "left"],
+        maxWidth: "48rem",
+        textAlign: ["center"],
       }}
     >
       <div
@@ -32,9 +32,11 @@ export default () => (
           letterSpacing: 1,
           mb: [2, 3],
           mt: [4, 0],
+          lineHeight: 1,
         }}
       >
-        Tanpa Had <br />
+        Tanpa Had<span sx={{ display: ["none", "inline"] }}>,</span>{" "}
+        <br sx={{ display: ["inline", "none"] }} />
         Tanpa Kontrak
       </div>
       <div
@@ -49,29 +51,6 @@ export default () => (
         Pek Jasa ialah pelan pasca bayar unifi Mobile™ eksklusif untuk Penjawat
         Awam dengan harga istimewa <b>RM59</b> sebulan.
       </div>
-      {/* <div
-        sx={{
-          fontSize: [4],
-          fontWeight: 700,
-          letterSpacing: 1,
-          mb: [2, 3],
-          mt: [4, 0],
-        }}
-      >
-        Hanya RM59 sebulan
-      </div>
-      <div
-        sx={{
-          fontWeight: 400,
-          fontSize: [2, 5],
-          letterSpacing: 1,
-          lineHeight: [1.2, 1.4],
-          // textAlign: "left",
-        }}
-      >
-        Anda layak menikmati pelan unifi Mobile™ tanpa had yang bernilai{" "}
-        <span sx={{ textDecoration: "line-through" }}>RM99</span>.
-      </div> */}
       <div>
         <a
           href="https://unifi.com.my/unifi-en/ijoin/slof-jasa.page"
@@ -90,6 +69,9 @@ export default () => (
             mt: [4, 4],
             boxSizing: "border-box",
             display: "block",
+            maxWidth: [null, 340],
+            textAlign: "center",
+            mx: "auto",
           }}
         >
           <div>
@@ -107,21 +89,19 @@ export default () => (
               </g>
             </svg>
           </div>
-          <div
-            sx={{
-              fontSize: [0, 1],
-              lineHeight: 1,
-              color: "white",
-              fontWeight: 300,
-            }}
-          >
-            Pendaftaran online 5 minit
-          </div>
         </a>
+        <div
+          sx={{
+            color: "grey",
+            mt: 2,
+            fontSize: 1,
+            fontStyle: "italic",
+            textAlign: "center",
+          }}
+        >
+          Harga biasa pelan tanpa had unifi Mobile™ ialah RM99
+        </div>
       </div>
-    </div>
-    <div sx={{ color: "grey", mt: 2, fontSize: 1, fontStyle: "italic" }}>
-      Harga biasa pelan tanpa had unifi Mobile™ ialah RM99
     </div>
   </div>
 )

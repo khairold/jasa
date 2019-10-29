@@ -3,11 +3,13 @@ import React from "react"
 import { jsx } from "theme-ui"
 
 export default () => (
-  <div sx={{ px: [1, 3], pt: [3, 1], pb: [3, 1], textAlign: "center" }}>
+  <div
+    sx={{ px: [1, 4], pt: [3, 1], pb: [3, 1], textAlign: ["center", "left"] }}
+  >
     <div
       sx={{
         fontWeight: [700, 700],
-        fontSize: [7],
+        fontSize: [7, 7, 8, 9],
         mt: 2,
         // color: ["hsl(220, 88%, 88%)", "white"],
 
@@ -15,12 +17,13 @@ export default () => (
         lineHeight: 1,
       }}
     >
-      Eksklusif untuk Penjawat Awam
+      Eksklusif untuk
+      <br /> Penjawat Awam
     </div>
     <div
       sx={{
         lineHeight: 1.2,
-        fontSize: [1, 3],
+        fontSize: [1, 2, 2, 3],
         pt: [3, 2],
         pb: 4,
         // letterSpacing: 0.8,

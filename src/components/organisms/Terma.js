@@ -10,7 +10,7 @@ export default () => (
       fontFamily: "body",
       px: 4,
       py: 4,
-      bg: "backGroundGrey",
+      bg: ["white", "white"],
       color: "text",
       fontSize: [0, 1],
     }}

@@ -233,7 +233,7 @@ const CardList = () => (
     sx={{
       // pl: 3,
       pt: 1,
-      pb: [3, 4],
+      pb: [3],
       m: 0,
       mt: 0,
       width: "90%",
@@ -309,7 +309,7 @@ export default () => (
             position: ["static", "relative"],
             left: 20,
             bg: "blue",
-            opacity: 0.9,
+            // opacity: 0.9,
             color: "white",
             fontFamily: "body",
             px: 3,

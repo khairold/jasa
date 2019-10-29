@@ -38,11 +38,12 @@ const MenuList = ({ to, children }) => (
     sx={{
       textAlign: "center",
       px: 1,
-      py: 3,
+      py: [3, 4],
       boxSizing: "border-box",
       bg: "white",
       letterSpacing: 1,
       cursor: "pointer",
+      fontSize: [2, 3],
     }}
   >
     <div sx={{ whiteSpace: "nowrap" }}>{children}</div>
@@ -51,7 +52,6 @@ const MenuList = ({ to, children }) => (
 
 export default ({ hideOnScroll }) => {
   const [box, boxView] = useInView({ threshold: 0 })
-  console.log(hideOnScroll)
   return (
     <>
       <div
@@ -110,11 +110,12 @@ export default ({ hideOnScroll }) => {
             "visible",
           ],
           scrollbarWidth: 0,
-          // borderBottomStyle: "solid",
-          // borderBottomColor: "faintBlue",
+          borderBottomStyle: ["none", "solid"],
+          borderBottomColor: "faintBlue",
           borderBottomWidth: 1,
           boxSizing: "border-box",
           // display: hideOnScroll ? "block" : "none",
+          display: ["block", "none"],
         }}
       >
         <div

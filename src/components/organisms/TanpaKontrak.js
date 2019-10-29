@@ -41,9 +41,11 @@ export default () => (
           fontSize: [2, 5],
           letterSpacing: 1,
           lineHeight: [1.2, 1.4],
+          // maxWidth: "24em",
         }}
       >
-        Tiada risiko. Tamatkan langganan Pek Jasa bila-bila masa tanpa penalti.
+        Cuba Pek Jasa tanpa risiko. Tamatkan <br />
+        langganan bila-bila masa tanpa penalti.
       </div>
       <div>
         <a
@@ -63,6 +65,8 @@ export default () => (
             mt: [4, 4],
             boxSizing: "border-box",
             display: "block",
+            maxWidth: [null, 340],
+            textAlign: "center",
           }}
         >
           <div>
@@ -79,16 +83,6 @@ export default () => (
                 <path d="m20 6.6l13.4 13.4-13.4 13.4-2.3-2.4 9.3-9.4h-20.4v-3.2h20.4l-9.3-9.4z"></path>
               </g>
             </svg>
-          </div>
-          <div
-            sx={{
-              fontSize: [0, 1],
-              lineHeight: 1,
-              color: "blue",
-              fontWeight: 300,
-            }}
-          >
-            Cuba Pek Jasa tanpa risiko
           </div>
         </a>
       </div>

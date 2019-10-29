@@ -127,7 +127,9 @@ const DaftarSekarang = () => (
       boxSizing: "border-box",
       display: "block",
       textAlign: "center",
-      mx: 3,
+      maxWidth: [null, 340],
+      textAlign: "center",
+      mx: [3, "auto"],
     }}
   >
     <div>
@@ -218,7 +220,7 @@ export default () => (
         subtitle="Kad SIM akan di hantar dalam masa dua hari tanpa sebarang bayaran."
       />
     </div>
-    <div sx={{ textAlign: "center", mt: [3, 5] }}>
+    <div sx={{ textAlign: "center", mt: [3, 4] }}>
       <DaftarSekarang />
     </div>
   </div>
