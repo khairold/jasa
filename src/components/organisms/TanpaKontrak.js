@@ -18,10 +18,11 @@ export default () => (
     <Unlock sx={{ color: "blue", size: [100, 240] }} />
     <div
       sx={{
-        ml: [3, 4],
-        mr: [3, 0],
-        maxWidth: "38rem",
+        ml: [0, 4],
+        // mr: [3, 0],
+        // maxWidth: "38rem",
         textAlign: ["center", "left"],
+        width: "100%",
       }}
     >
       <div
@@ -67,6 +68,7 @@ export default () => (
             display: "block",
             maxWidth: [null, 340],
             textAlign: "center",
+            mx: [3, 0],
           }}
         >
           <div>

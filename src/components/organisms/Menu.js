@@ -43,7 +43,7 @@ const MenuList = ({ to, children }) => (
       bg: "white",
       letterSpacing: 1,
       cursor: "pointer",
-      fontSize: [2, 3],
+      fontSize: [0],
     }}
   >
     <div sx={{ whiteSpace: "nowrap" }}>{children}</div>
