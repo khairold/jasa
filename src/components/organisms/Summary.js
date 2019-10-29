@@ -2,46 +2,46 @@
 import { jsx } from "theme-ui"
 
 const DaftarSekarang = ({ display }) => (
-  <div>
-    <a
-      href="https://unifi.com.my/unifi-en/ijoin/slof-jasa.page"
-      sx={{
-        borderColor: "black",
-        borderStyle: "solid",
-        borderWidth: 1,
-        color: "white",
-        bg: "black",
-        fontWeight: 600,
-        letterSpacing: 1,
-        px: 3,
-        py: [3, 3],
-        fontSize: [3, 3],
-        mt: [4, 4],
-        boxSizing: "border-box",
-        display: "block",
-        textAlign: "center",
-        maxWidth: [null, 340],
-        mx: ["auto", 0],
-        display,
-      }}
-    >
-      <div>
-        Daftar Sekarang
-        <svg
-          sx={{ fill: "white" }}
-          preserveAspectRatio="xMidYMid meet"
-          height="1em"
-          width="1em"
-          viewBox="0 0 40 40"
-          style={{ verticalAlign: "middle" }}
-        >
-          <g>
-            <path d="m20 6.6l13.4 13.4-13.4 13.4-2.3-2.4 9.3-9.4h-20.4v-3.2h20.4l-9.3-9.4z"></path>
-          </g>
-        </svg>
-      </div>
-    </a>
-  </div>
+  <a
+    href="https://unifi.com.my/unifi-en/ijoin/slof-jasa.page"
+    sx={{
+      borderColor: "black",
+      borderStyle: "solid",
+      borderWidth: 1,
+      color: "white",
+      bg: "black",
+      fontWeight: 600,
+      letterSpacing: 1,
+      px: 3,
+      py: [3, 3],
+      fontSize: [3, 3],
+      mt: [4, 4],
+      boxSizing: "border-box",
+      display: "block",
+      textAlign: "center",
+      width: "100%",
+      maxWidth: [null, 340],
+      mx: ["auto", 0],
+      display,
+      // flexShrink: 0,
+    }}
+  >
+    <div>
+      Daftar Sekarang
+      <svg
+        sx={{ fill: "white" }}
+        preserveAspectRatio="xMidYMid meet"
+        height="1em"
+        width="1em"
+        viewBox="0 0 40 40"
+        style={{ verticalAlign: "middle" }}
+      >
+        <g>
+          <path d="m20 6.6l13.4 13.4-13.4 13.4-2.3-2.4 9.3-9.4h-20.4v-3.2h20.4l-9.3-9.4z"></path>
+        </g>
+      </svg>
+    </div>
+  </a>
 )
 
 const JasaList = ({ first, second }) => (

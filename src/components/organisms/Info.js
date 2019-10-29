@@ -105,9 +105,9 @@ export default () => (
     <InfoBox id="tambah">
       <InfoHeading>Tambah Talian</InfoHeading>
       <InfoP>
-        Jika anda melanggan Pek Jasa, anda boleh menambah sehingga <b>empat</b>{" "}
-        talian lain di bawah akaun yang sama. Pilih dari pelan unifi Mobile™
-        berikut:
+        Dibawah langganan Pek Jasa RM59/bulan, anda boleh menambah sehingga{" "}
+        <b>empat</b> talian lain di bawah akaun yang sama. Pilih dari pelan
+        unifi Mobile™ berikut untuk talian tambahan:
       </InfoP>
       <ul sx={{ fontSize: 2, pl: 2 }}>
         <li sx={{ mb: 1, listStyleType: "none" }}>

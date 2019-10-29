@@ -167,7 +167,7 @@ const CardButton = () => (
         fontWeight: 300,
       }}
     >
-      Kad SIM dihantar tanpa bayaran
+      Penghantaran Kad SIM adalah percuma
     </div>
   </a>
 )
