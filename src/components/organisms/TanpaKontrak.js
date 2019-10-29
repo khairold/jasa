@@ -13,6 +13,7 @@ export default () => (
       bg: "white",
       color: "text",
       fontFamily: "body",
+      mx: "auto",
     }}
   >
     <Unlock sx={{ color: "blue", size: [100, 240] }} />
@@ -22,7 +23,7 @@ export default () => (
         // mr: [3, 0],
         // maxWidth: "38rem",
         textAlign: ["center", "left"],
-        width: "100%",
+        // width: "100%",
       }}
     >
       <div
