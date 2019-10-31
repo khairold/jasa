@@ -316,7 +316,7 @@ export default () => (
             color: "white",
             fontFamily: "body",
             px: 3,
-            py: 3,
+            py: 4,
             // mr: [0, 3],
             // maxWidth: "30em",
           }}
