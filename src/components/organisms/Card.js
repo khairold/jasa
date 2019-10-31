@@ -295,7 +295,7 @@ export default () => (
     />
     <div
       sx={{
-        py: [0, 5],
+        py: [0, 3],
         display: "flex",
         width: "100%",
         maxWidth: 960,

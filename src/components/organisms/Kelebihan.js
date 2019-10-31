@@ -6,7 +6,8 @@ export default () => (
     id="kelebihan"
     sx={{
       pb: [5, 5],
-      pt: [4, 6],
+      mt: 4,
+      pt: [4, 5],
       display: "flex",
       justifyContent: "center",
       alignItems: "center",
