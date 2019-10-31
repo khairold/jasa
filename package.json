@@ -12,6 +12,7 @@
     "formik": "^1.5.8",
     "gatsby": "^2.15.15",
     "gatsby-image": "^2.2.19",
+    "gatsby-plugin-google-analytics": "^2.1.23",
     "gatsby-plugin-html-attributes": "^1.0.5",
     "gatsby-plugin-manifest": "^2.2.16",
     "gatsby-plugin-mdx": "^1.0.41",
@@ -42,7 +43,8 @@
   "license": "MIT",
   "scripts": {
     "f": "gatsby build && firebase deploy",
-    "build": "gatsby build --prefix-paths",
+    "build": "gatsby build",
+    "jasa": "gatsby build --prefix-paths",
     "develop": "gatsby develop -H 0.0.0.0",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",

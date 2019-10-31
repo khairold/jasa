@@ -198,13 +198,13 @@ export default () => (
         icon={FileText}
         first
         title="Daftar online"
-        subtitle="Hantar butiran dan kami akan menyemak kelayakan anda."
+        subtitle="Hantar butiran dan kami akan mengesahkan kelayakan anda."
       />
       <Langkah
         sequence="2"
         icon={Mail}
         title="Tunggu e-mel"
-        subtitle="Pengesahan dalam 48 jam hari bekerja. Klik pautan dalam e-mel."
+        subtitle="Pengesahan dalam 24 jam hari bekerja. Klik pautan dalam e-mel."
       />
       <Langkah
         sequence="3"

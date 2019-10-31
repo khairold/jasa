@@ -4,6 +4,7 @@ import { jsx } from "theme-ui"
 import KhabarBaik from "../molecules/KhabarBaik"
 import PenjawatAwam from "../molecules/PenjawatAwam"
 import Check from "../../icons/Check"
+import masthead from "../../images/campaign-masthead.webp"
 
 const KelebihanListItem = ({ children }) => (
   <li
@@ -136,7 +137,7 @@ const CardButton = () => (
       px: 3,
       py: [3],
 
-      mt: [2, 4],
+      mt: [2],
       boxSizing: "border-box",
       display: "block",
       width: "100%",
@@ -167,7 +168,7 @@ const CardButton = () => (
         fontWeight: 300,
       }}
     >
-      Penghantaran Kad SIM adalah percuma
+      Untuk Penjawat Awam sahaja
     </div>
   </a>
 )
@@ -194,9 +195,9 @@ const MoreItems = () => {
         <>
           <KelebihanListItem>
             Hotspot 10GB percuma{" "}
-            <div sx={{ color: "lightGrey", fontSize: [1], fontWeight: 400 }}>
+            <span sx={{ color: "lightGrey", fontSize: [1], fontWeight: 400 }}>
               setiap bulan
-            </div>
+            </span>
           </KelebihanListItem>
           <KelebihanListItem>
             <a
@@ -206,9 +207,9 @@ const MoreItems = () => {
             >
               Parayauan Antarabangsa
             </a>
-            <div sx={{ color: "lightGrey", fontSize: [1], fontWeight: 400 }}>
+            {/* <div sx={{ color: "lightGrey", fontSize: [1], fontWeight: 400 }}>
               tersedia ada
-            </div>
+            </div> */}
           </KelebihanListItem>
           <KelebihanListItem>
             <a
@@ -218,9 +219,9 @@ const MoreItems = () => {
             >
               Perkhidmatan IDD{" "}
             </a>
-            <div sx={{ color: "lightGrey", fontSize: [1], fontWeight: 400 }}>
+            {/* <div sx={{ color: "lightGrey", fontSize: [1], fontWeight: 400 }}>
               ke seluruh dunia
-            </div>
+            </div> */}
           </KelebihanListItem>
         </>
       )}
@@ -234,32 +235,34 @@ const CardList = () => (
       // pl: 3,
       pt: 1,
       pb: [3],
-      m: 0,
+      mb: 0,
       mt: 0,
-      width: "90%",
-      m: "auto",
+      // width: "90%",
+      mx: "auto",
       // bg: "yellow",
+      px: 0,
+      pl: 4,
     }}
     style={{ listStyleType: "none" }}
   >
     <KelebihanListItem>
-      Tanpa had
-      <div sx={{ color: "lightGrey", fontSize: [1], fontWeight: 400 }}>
+      Tanpa had{" "}
+      <span sx={{ color: "lightGrey", fontSize: [1], fontWeight: 400 }}>
         data, panggilan, dan SMS
-      </div>
+      </span>
     </KelebihanListItem>
     <KelebihanListItem>
-      Tanpa kontrak
-      <div sx={{ color: "lightGrey", fontSize: [1], fontWeight: 400 }}>
+      Tanpa kontrak{" "}
+      <span sx={{ color: "lightGrey", fontSize: [1], fontWeight: 400 }}>
         tiada komitmen
-      </div>
+      </span>
     </KelebihanListItem>
     <KelebihanListItem>
-      Diskaun RM40
-      <div sx={{ color: "lightGrey", fontSize: [1], fontWeight: 400 }}>
+      Diskaun RM40{" "}
+      <span sx={{ color: "lightGrey", fontSize: [1], fontWeight: 400 }}>
         harga biasa
         <span style={{ textDecoration: "line-through" }}> RM99</span>
-      </div>
+      </span>
     </KelebihanListItem>
     <MoreItems />
   </ul>
@@ -272,7 +275,7 @@ export default () => (
       backgroundPosition: ["center", "center", "left"],
       backgroundSize: "cover",
       backgroundRepeat: "no-repeat",
-      backgroundImage: `url("/images/campaign-masthead.webp")`,
+      backgroundImage: `url(${masthead})`,
       fontFamily: "body",
       color: "text",
     }}
@@ -326,7 +329,8 @@ export default () => (
         sx={{
           position: ["relative", "sticky"],
           top: [-42, -42],
-          py: 4,
+          pt: 4,
+          pb: 4,
           bg: "white",
           maxWidth: [340],
           boxSizing: "border-box",

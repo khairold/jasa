@@ -99,15 +99,15 @@ export default () => (
       </InfoUl>
       <InfoQuote>
         Kami akan menguruskan pemindahan nombor dari pengendali talian mudah
-        alih anda. Pemindahan selalunya memakan masa kurang dari 2 hari.
+        alih anda.
       </InfoQuote>
     </InfoBox>
     <InfoBox id="tambah">
       <InfoHeading>Tambah Talian</InfoHeading>
       <InfoP>
-        Dibawah langganan Pek Jasa RM59/bulan, anda boleh menambah sehingga{" "}
-        <b>empat</b> talian lain di bawah akaun yang sama. Pilih dari pelan
-        unifi Mobile™ berikut untuk talian tambahan:
+        Anda boleh menambah sehingga <b>empat talian lain</b> di bawah akaun
+        langganan Pek Jasa RM59/bulan anda. Pilih dari pelan unifi Mobile™
+        berikut untuk talian tambahan:
       </InfoP>
       <ul sx={{ fontSize: 2, pl: 2 }}>
         <li sx={{ mb: 1, listStyleType: "none" }}>

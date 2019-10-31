@@ -1,5 +1,6 @@
 module.exports = {
-  pathPrefix: `/pekjasa`,
+  // pathPrefix: `/pekjasa`,
+  assetPrefix: `/pekjasa`,
   siteMetadata: {
     title: `Gatsby Default Starter`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
@@ -20,6 +21,13 @@ module.exports = {
       resolve: "gatsby-plugin-html-attributes",
       options: {
         lang: "ms",
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        // replace "UA-XXXXXXXXX-X" with your own Tracking ID
+        trackingId: "UA-XXXXXXXXX-X",
       },
     },
     `gatsby-transformer-sharp`,

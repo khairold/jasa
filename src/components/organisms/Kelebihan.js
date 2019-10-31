@@ -90,7 +90,7 @@ export default () => (
             </svg>
           </div>
         </a>
-        <div
+        {/* <div
           sx={{
             color: "grey",
             mt: 2,
@@ -100,7 +100,7 @@ export default () => (
           }}
         >
           Harga biasa pelan tanpa had unifi Mobile™ ialah RM99
-        </div>
+        </div> */}
       </div>
     </div>
   </div>
