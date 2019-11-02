@@ -1,6 +1,6 @@
 module.exports = {
-  // pathPrefix: `/pekjasa`,
-  assetPrefix: `/pekjasa`,
+  pathPrefix: `/jasapek2`,
+  // assetPrefix: `/pekjasa`,
   siteMetadata: {
     title: `Gatsby Default Starter`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,

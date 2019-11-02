@@ -166,7 +166,7 @@ export default () => (
     sx={{
       fontFamily: "body",
       color: "text",
-      py: [4, 5],
+      py: [4, 6],
       m: "auto",
       maxWidth: 1024,
     }}

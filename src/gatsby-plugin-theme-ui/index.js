@@ -1,4 +1,6 @@
 export default {
+  // breakpoints: ["40em", "56em", "64em"],
+  // breakpoints: [360, 700, 1024, 1366, 1920],
   fonts: {
     body: "roboto, system-ui, sans-serif",
     heading: "roboto, system-ui, sans-serif",

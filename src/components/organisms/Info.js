@@ -25,11 +25,13 @@ const InfoBox = ({ id, children }) => (
       px: [4, 4],
       py: 4,
       lineHeight: 1.6,
-      borderColor: "backGroundGrey",
+      borderColor: "#eee",
       borderWidth: 1,
       borderStyle: ["none", "none", "none", "solid"],
+      // borderTopStyle: ["none", "none", "none", "solid"],
+      // borderRightStyle: ["none", "none", "none", "solid"],
       width: ["100%", "100%", "100%", "33.33%"],
-      maxWidth: ["100%", "42rem"],
+      maxWidth: ["100%", "100%", "100%", "42rem"],
       boxSizing: "border-box",
     }}
   >
@@ -65,6 +67,9 @@ export default () => (
       flexWrap: "wrap",
       fontFamily: "body",
       color: "text",
+      maxWidth: 1366,
+      boxSizing: "border-box",
+      mx: "auto",
     }}
   >
     <InfoBox id="kelayakan">
@@ -109,7 +114,7 @@ export default () => (
         langganan Pek Jasa RM59/bulan anda. Pilih dari pelan unifi Mobile™
         berikut untuk talian tambahan:
       </InfoP>
-      <ul sx={{ fontSize: 2, pl: 2 }}>
+      <ul sx={{ fontSize: 2, pl: 1 }}>
         <li sx={{ mb: 1, listStyleType: "none" }}>
           <b>RM99</b>: Tanpa had data, panggilan & SMS
         </li>

@@ -241,7 +241,7 @@ const CardList = () => (
       mx: "auto",
       // bg: "yellow",
       px: 0,
-      pl: 4,
+      pl: 3,
     }}
     style={{ listStyleType: "none" }}
   >
@@ -276,6 +276,7 @@ export default () => (
       backgroundSize: "cover",
       backgroundRepeat: "no-repeat",
       backgroundImage: `url(${masthead})`,
+      // bg: "blue",
       fontFamily: "body",
       color: "text",
     }}
@@ -289,16 +290,31 @@ export default () => (
         right: 0,
         display: ["block", "block"],
         backgroundImage: [
-          "linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.9))",
+          // "linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.9))",
+          "linear-gradient(180deg, hsl(212, 74%, 34%, 0.2), hsl(212, 74%, 34%, 0.7), hsl(212, 88%, 23%, 1))",
         ],
       }}
     />
     <div
       sx={{
-        py: [0, 3],
+        position: ["absolute"],
+        top: 0,
+        bottom: 0,
+        left: 0,
+        right: 0,
+        display: ["block", "block"],
+        backgroundImage: [
+          // "linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.9))",
+          "linear-gradient(90deg, hsl(212, 74%, 34%, 0.2), hsl(212, 88%, 23%, 1))",
+        ],
+      }}
+    />
+    <div
+      sx={{
+        py: [0, 5],
         display: "flex",
         width: "100%",
-        maxWidth: 960,
+        maxWidth: [null, 1024],
         m: "auto",
         justifyContent: ["center", "space-between"],
         alignItems: ["center", "flex-end"],
@@ -311,12 +327,13 @@ export default () => (
           sx={{
             position: ["static", "relative"],
             left: 20,
-            bg: "blue",
+            // bg: "blue",
             // opacity: 0.9,
             color: "white",
             fontFamily: "body",
             px: 3,
-            py: 4,
+            pt: 2,
+            pb: 3,
             // mr: [0, 3],
             // maxWidth: "30em",
           }}

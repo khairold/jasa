@@ -5,9 +5,9 @@ export default () => (
   <div
     id="kelebihan"
     sx={{
-      pb: [5, 5],
-      mt: 4,
-      pt: [4, 5],
+      pb: [5, 6],
+      // mt: 4,
+      pt: [4, 6],
       display: "flex",
       justifyContent: "center",
       alignItems: "center",

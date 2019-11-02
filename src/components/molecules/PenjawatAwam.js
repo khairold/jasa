@@ -15,6 +15,7 @@ export default () => (
 
         color: "white",
         lineHeight: 1,
+        textShadow: ["none", "2px 2px hsl(212, 88%, 23%)"],
       }}
     >
       Eksklusif untuk

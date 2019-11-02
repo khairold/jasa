@@ -82,7 +82,7 @@ export default () => (
       <div>
         <div
           sx={{
-            fontSize: [6, 8],
+            fontSize: [6, 7, 7, 8],
             fontWeight: [900, 700],
             letterSpacing: 1,
             mb: [4],
