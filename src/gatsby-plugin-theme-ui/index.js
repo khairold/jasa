@@ -9,7 +9,7 @@ export default {
   fontSizes: [12, 14, 16, 18, 20, 24, 30, 36, 48, 60, 72, 84],
   colors: {
     orange: "hsl(16, 88%, 55%)",
-    blue: "hsl(212, 74%, 34%)",
+    blue: "hsl(212, 74%, 35%)",
     grey: "hsl(201, 23%, 34%)",
     lightGrey: "hsl(203, 15%, 47%)",
     backGroundGrey: "hsl(0, 0%, 96%)",

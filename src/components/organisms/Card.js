@@ -291,7 +291,7 @@ export default () => (
         display: ["block", "block"],
         backgroundImage: [
           // "linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.9))",
-          "linear-gradient(180deg, hsl(212, 74%, 34%, 0.2), hsl(212, 74%, 34%, 0.7), hsl(212, 88%, 23%, 1))",
+          "linear-gradient(180deg, hsl(212, 74%, 34%, 0.2), hsl(212, 74%, 34%, 0.4), hsl(212, 74%, 34%, 0.9), hsl(212, 88%, 23%, 1))",
         ],
       }}
     />
