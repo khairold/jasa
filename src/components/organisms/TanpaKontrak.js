@@ -69,7 +69,7 @@ export default () => (
             display: "block",
             maxWidth: [null, 340],
             textAlign: "center",
-            mx: [3, 0],
+            // mx: [3, 0],
           }}
         >
           <div>

@@ -14,6 +14,10 @@ export default props => (
       // textAlign: "center",
       fontFamily: "body",
       display: ["static", "none"],
+      backgroundImage: [
+        // "linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.9))",
+        "linear-gradient(135deg, hsl(212, 74%,50%), hsl(212, 88%, 23%))",
+      ],
     }}
   >
     <div sx={{ maxWidth: 960, m: "auto" }}>
