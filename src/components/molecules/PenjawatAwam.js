@@ -15,10 +15,10 @@ export default () => (
 
         color: "white",
         lineHeight: 1,
-        textShadow: [
-          "1px 1px hsl(212, 88%, 23%)",
-          "2px 2px hsl(212, 88%, 23%)",
-        ],
+        // textShadow: [
+        //   "1px 1px hsl(212, 88%, 23%)",
+        //   "2px 2px hsl(212, 88%, 23%)",
+        // ],
       }}
     >
       Eksklusif untuk

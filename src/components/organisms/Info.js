@@ -7,7 +7,7 @@ const InfoHeading = ({ children }) => (
       color: "text",
       fontSize: 5,
       fontWeight: 900,
-      textAlign: ["center", "left"],
+      textAlign: ["left", "left"],
     }}
   >
     {children}

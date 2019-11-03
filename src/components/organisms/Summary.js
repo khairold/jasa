@@ -14,14 +14,13 @@ const DaftarSekarang = ({ display }) => (
       letterSpacing: 1,
       px: 3,
       py: [3, 3],
-      fontSize: [3, 3],
+      fontSize: [4, 4],
       mt: [4, 4],
       boxSizing: "border-box",
-      display: "block",
       textAlign: "center",
-      width: "100%",
+      // width: "100%",
       maxWidth: [null, 340],
-      mx: ["auto", 0],
+      mx: [4, 0],
       display,
       // flexShrink: 0,
     }}
@@ -64,14 +63,14 @@ export default () => (
     sx={{
       fontFamily: "body",
       color: "text",
-      px: 3,
+      // px: 3,
       py: 5,
       bg: "backGroundGrey",
     }}
   >
     <div
       sx={{
-        display: "flex",
+        display: ["block", "flex"],
         flexDirection: ["column", "row"],
         justifyContent: "space-between",
         alignItems: "center",
@@ -82,13 +81,14 @@ export default () => (
       <div>
         <div
           sx={{
-            fontSize: [6, 7, 7, 8],
-            fontWeight: [900, 700],
+            fontSize: [5, 6, 6, 8],
+            fontWeight: [700, 700],
             letterSpacing: 1,
             mb: [4],
             mt: [4, 0],
-            textAlign: ["center", "left"],
+            textAlign: ["left", "left"],
             lineHeight: 1,
+            mx: [4, 0],
           }}
         >
           Tawaran sah jika anda <br sx={{ display: ["inline"] }} />
@@ -107,7 +107,7 @@ export default () => (
           borderTopWidth: 4,
           boxSizing: "border-box",
           maxWidth: [null, 340],
-          mx: "auto",
+          mx: [4, "auto"],
         }}
       >
         <div sx={{ mb: 4 }}>

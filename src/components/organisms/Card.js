@@ -134,7 +134,7 @@ const CardButton = () => (
       position: "relative",
       left: 16,
 
-      px: 3,
+      // px: 3,
       py: [3],
 
       mt: [2],
@@ -145,8 +145,8 @@ const CardButton = () => (
       boxShadow: "-3px 0px 2px hsl(0, 0%, 70%)",
     }}
   >
-    <div sx={{ fontSize: [3, 4], fontWeight: 600 }}>
-      Daftar Sekarang
+    <div sx={{ fontSize: [4, 4], fontWeight: 600 }}>
+      Jemputan Eksklusif
       <svg
         sx={{ fill: "white" }}
         preserveAspectRatio="xMidYMid meet"

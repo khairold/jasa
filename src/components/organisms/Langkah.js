@@ -123,13 +123,13 @@ const DaftarSekarang = () => (
       // maxWidth: 340,
       px: 3,
       py: [3, 3],
-      fontSize: [3, 3],
+      fontSize: [4, 4],
       boxSizing: "border-box",
       display: "block",
       textAlign: "center",
       maxWidth: [null, 340],
       textAlign: "center",
-      mx: [3, "auto"],
+      mx: [4, "auto"],
     }}
   >
     <div>
@@ -173,10 +173,10 @@ export default () => (
   >
     <h3
       sx={{
-        px: [3, 0],
+        px: [4, 0],
         mt: 4,
         mb: [4, 5],
-        textAlign: ["center", "center"],
+        textAlign: ["left", "center"],
         fontSize: [6, 7],
         lineHeight: 1,
         fontWeight: "900",

@@ -6,24 +6,26 @@ export default () => (
   <div
     sx={{
       py: [5, 6],
-      display: "flex",
+      display: ["block", "flex"],
       justifyContent: "center",
       alignItems: "center",
-      flexDirection: ["column", "row"],
       bg: "white",
       color: "text",
       fontFamily: "body",
       mx: "auto",
+      textAlign: ["left", "center"],
     }}
   >
-    <Unlock sx={{ color: "blue", size: [100, 240] }} />
+    <Unlock sx={{ mx: [4, 0], color: "blue", size: [100, 240] }} />
     <div
       sx={{
-        ml: [0, 4],
+        // ml: [0, 4],
         // mr: [3, 0],
-        // maxWidth: "38rem",
-        textAlign: ["center", "left"],
+        maxWidth: "40rem",
+        textAlign: ["left", "left"],
         // width: "100%",
+        // flexShrink: 0,
+        mx: [4],
       }}
     >
       <div
@@ -46,8 +48,8 @@ export default () => (
           // maxWidth: "24em",
         }}
       >
-        Cuba Pek Jasa tanpa risiko. Tamatkan <br />
-        langganan bila-bila masa tanpa penalti.
+        Cuba Pek Jasa tanpa risiko. Anda bebas untuk menamatkan langganan
+        bila-bila masa tanpa penalti.
       </div>
       <div>
         <a
@@ -63,7 +65,7 @@ export default () => (
             // borderRadius: 4,
             px: 3,
             py: [3, 3],
-            fontSize: [3, 3],
+            fontSize: [4, 4],
             mt: [4, 4],
             boxSizing: "border-box",
             display: "block",

@@ -1,5 +1,22 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
+import Square from "../../icons/Square"
+
+const Jika = ({ children }) => (
+  <li sx={{ mb: 2, display: "flex", justifyContent: "baseline" }}>
+    <Square
+      sx={{
+        size: [18, 24],
+        color: "blue",
+        mr: 2,
+        flexShrink: 0,
+        position: "relative",
+        top: ["0px", "3px"],
+      }}
+    />
+    <div>{children}</div>
+  </li>
+)
 
 export default () => (
   <div
@@ -20,10 +37,10 @@ export default () => (
   >
     <div
       sx={{
-        ml: [3, 4],
-        mr: [3, 0],
+        ml: [4, 4],
+        mr: [4, 0],
         maxWidth: "48rem",
-        textAlign: ["center"],
+        textAlign: ["left", "center"],
       }}
     >
       <div
@@ -50,8 +67,38 @@ export default () => (
         }}
       >
         Pek Jasa ialah pelan pasca bayar unifi Mobile™ eksklusif untuk Penjawat
-        Awam dengan harga istimewa <b>RM59</b> sebulan.
+        Awam dengan harga istimewa <b>RM59</b> sebulan. Tanpa had untuk data,
+        panggilan, dan SMS. Tanpa kontrak.
       </div>
+      <div
+        sx={{
+          mt: 3,
+          fontWeight: 400,
+          fontSize: [2, 5],
+          letterSpacing: 1,
+          lineHeight: [1.2, 1.4],
+          // textAlign: "left",
+        }}
+      >
+        <div>
+          Anda <b>berpuas hati</b> dengan pelan mobile anda sekarang? Jika:
+        </div>
+        <ul
+          sx={{
+            textAlign: "left",
+            px: 0,
+            listStyleType: "none",
+            display: "inline-block",
+          }}
+        >
+          <Jika>Kuota data bulanan anda tidak mencukupi</Jika>
+          <Jika>Kredit prabayar anda cepat habis</Jika>
+          <Jika>Bill bulanan anda terlalu tinggi</Jika>
+          <Jika>Anda ingin menggunakan data tanpa risau</Jika>
+        </ul>
+        {/* <div sx={{ mt: 0 }}>Anda perlukan Pek Jasa hari ini.</div> */}
+      </div>
+
       <div>
         <a
           href="https://unifi.com.my/unifi-en/ijoin/slof-jasa.page"
@@ -66,7 +113,7 @@ export default () => (
             // borderRadius: 4,
             px: 3,
             py: [3, 3],
-            fontSize: [3, 3],
+            fontSize: [4, 4],
             mt: [4, 4],
             boxSizing: "border-box",
             display: "block",
@@ -76,7 +123,7 @@ export default () => (
           }}
         >
           <div>
-            Daftar sekarang
+            Dapatkan Pek Jasa
             <svg
               sx={{ fill: "white" }}
               preserveAspectRatio="xMidYMid meet"
@@ -89,6 +136,16 @@ export default () => (
                 <path d="m20 6.6l13.4 13.4-13.4 13.4-2.3-2.4 9.3-9.4h-20.4v-3.2h20.4l-9.3-9.4z"></path>
               </g>
             </svg>
+          </div>
+          <div
+            sx={{
+              fontSize: [0, 1],
+              lineHeight: 1,
+              color: "hsl(220, 88%, 88%)",
+              fontWeight: 300,
+            }}
+          >
+            Bebaskan diri anda
           </div>
         </a>
         {/* <div

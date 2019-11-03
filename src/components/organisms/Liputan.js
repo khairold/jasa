@@ -15,7 +15,7 @@ export default () => (
   >
     <div
       sx={{
-        textAlign: "center",
+        textAlign: ["left", "center"],
         maxWidth: 720,
         m: "auto",
       }}
@@ -39,7 +39,9 @@ export default () => (
           lineHeight: [1.2, 1.4],
         }}
       >
-        Anda boleh berhubung dari mana-mana sahaja.{" "}
+        Tiada risiko untuk anda mencuba sendiri liputan meluas kami dengan
+        melanggan Pek Jasa. Anda tidak terikat dengan sebarang kontrak.
+        {/* Anda boleh berhubung dari mana-mana sahaja.{" "}
         <br sx={{ display: ["none", "inline"] }} />
         Periksa liputan di{" "}
         <a
@@ -48,7 +50,7 @@ export default () => (
         >
           sini
         </a>
-        .
+        . */}
       </div>
     </div>
   </div>
