@@ -112,7 +112,7 @@ export default () => (
       >
         <div sx={{ mb: 4 }}>
           <div>unifi Mobile™ Pek Jasa</div>
-          <div sx={{ fontSize: 5, fontWeight: 700 }}>RM59 / bulan</div>
+          <div sx={{ fontSize: 5, fontWeight: 700 }}>RM59* / bulan</div>
         </div>
         <JasaList first="Tanpa had" second="Data" />
         <JasaList first="Tanpa had" second="Panggilan" />
@@ -121,6 +121,7 @@ export default () => (
         <JasaList first="10GB*" second="Hotspot" />
         <JasaList first="RM38*" second="Data Roaming" />
         <div sx={{ fontSize: 0, pt: 4 }}>
+          <div sx={{ mb: 2 }}>* RM59 harga sebelum 6% SST</div>
           <div sx={{ mb: 2 }}>
             * 10GB hotspot percuma setiap bulan. RM8 untuk setiap 500MB yang
             seterusnya.
