@@ -37,7 +37,7 @@ export default () => (
   >
     <div
       sx={{
-        ml: [4, 4],
+        ml: [4, 0],
         mr: [4, 0],
         maxWidth: "48rem",
         textAlign: ["left", "center"],
