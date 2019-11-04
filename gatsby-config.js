@@ -2,9 +2,9 @@ module.exports = {
   pathPrefix: `/jasapek2`,
   // assetPrefix: `/pekjasa`,
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Pek Jasa unifi Mobile™ | Daftar online`,
+    description: `Pek jasa ialah pelan pasca bayar ekslusif untuk Penjawat Awam dari unifi Mobile™. Tawaran Pek Jasa ciri-ciri ini terhad sehingga 31 Disember 2019.`,
+    author: `@unifi`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -23,13 +23,12 @@ module.exports = {
         lang: "ms",
       },
     },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        // replace "UA-XXXXXXXXX-X" with your own Tracking ID
-        trackingId: "UA-XXXXXXXXX-X",
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-google-analytics`,
+    //   options: {
+    //     trackingId: "UA-XXXXXXXXX-X",
+    //   },
+    // },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-modal-routing`,

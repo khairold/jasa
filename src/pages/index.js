@@ -55,15 +55,23 @@ export default () => {
       <Helmet>
         <meta charSet="utf-8" />
         <title>unifi Pek Jasa</title>
-        <meta name="title" content="unifi Pek Jasa"></meta>
+        <meta
+          name="title"
+          content="Pek Jasa unifi Mobile™ | Daftar online"
+        ></meta>
         <meta
           name="keywords"
           content="daftar pek jasa, pek jasa guru, pek jasa penjawat awam, pek jasa unifi pdrm, unifi pek jasa"
         ></meta>
         <meta
           name="description"
-          content="Daftar unifi Pek Jasa sekarang untuk anda jalani hidup tanpa sempadan dengan menikmati data, panggilan dan SMS tanpa had sepanjang hari, setiap hari khas buat semua penjawat awam"
+          content="Pek jasa ialah pelan pasca bayar ekslusif untuk Penjawat Awam dari unifi Mobile™. Tawaran Pek Jasa ciri-ciri ini terhad sehingga 31 Disember 2019."
         ></meta>
+        <script
+          type="text/javascript"
+          src="/lsds/assets/js/common/analytics.js"
+          data-tg-desktop_or_tablet_or_phone="show"
+        ></script>
       </Helmet>
       <Header />
       <Card />
