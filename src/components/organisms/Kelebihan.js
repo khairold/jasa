@@ -48,7 +48,7 @@ export default () => (
           fontSize: [7, 8],
           fontWeight: 900,
           letterSpacing: 1,
-          mb: [2, 3],
+          mb: [3, 4],
           mt: [4, 0],
           lineHeight: 1,
         }}
@@ -72,7 +72,7 @@ export default () => (
       </div>
       <div
         sx={{
-          mt: 3,
+          mt: [3, 4],
           fontWeight: 400,
           fontSize: [2, 5],
           letterSpacing: 1,
@@ -114,7 +114,7 @@ export default () => (
             px: 3,
             py: [3, 3],
             fontSize: [4, 4],
-            mt: [4, 4],
+            // mt: [4, 4],
             boxSizing: "border-box",
             display: "block",
             maxWidth: [null, 340],

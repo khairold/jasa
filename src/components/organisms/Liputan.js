@@ -5,7 +5,7 @@ export default () => (
   <div
     id="liputan"
     sx={{
-      py: 6,
+      py: [5, 6],
       bg: "white",
       color: "text",
       fontFamily: "body",
