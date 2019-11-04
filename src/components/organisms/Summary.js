@@ -78,7 +78,7 @@ export default () => (
         mx: "auto",
       }}
     >
-      <div>
+      <div sx={{ ml: [0, 4] }}>
         <div
           sx={{
             fontSize: [5, 6, 6, 8],
