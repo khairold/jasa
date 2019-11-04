@@ -217,7 +217,7 @@ export default () => (
         icon={Truck}
         last
         title="Terima Kad SIM"
-        subtitle="Kad SIM akan di hantar dalam masa dua hari. Penghantaran percuma."
+        subtitle="Kad SIM akan di hantar ke rumah anda. Penghantaran percuma."
       />
     </div>
     <div sx={{ textAlign: "center", mt: [3, 4] }}>

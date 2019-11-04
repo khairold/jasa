@@ -37,7 +37,7 @@ export default () => (
           mt: [4, 0],
         }}
       >
-        Tidak Terikat Dengan Kontrak
+        Tanpa Kontrak
       </div>
       <div
         sx={{

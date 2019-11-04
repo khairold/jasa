@@ -3,8 +3,8 @@ import { jsx } from "theme-ui"
 import Square from "../../icons/Square"
 
 const Jika = ({ children }) => (
-  <li sx={{ mb: 2, display: "flex", justifyContent: "baseline" }}>
-    <Square
+  <li sx={{ mb: 2, ml: 4 }}>
+    {/* <Square
       sx={{
         size: [18, 24],
         color: "blue",
@@ -13,7 +13,7 @@ const Jika = ({ children }) => (
         position: "relative",
         top: ["0px", "3px"],
       }}
-    />
+    /> */}
     <div>{children}</div>
   </li>
 )
@@ -81,20 +81,20 @@ export default () => (
         }}
       >
         <div>
-          Anda <b>berpuas hati</b> dengan pelan mobile anda sekarang? Jika:
+          Adakah anda <b>berpuas hati</b> dengan pelan mobile anda sekarang:
         </div>
         <ul
           sx={{
             textAlign: "left",
             px: 0,
-            listStyleType: "none",
+            // listStyleType: "none",
             display: "inline-block",
           }}
         >
-          <Jika>Kuota data bulanan anda tidak mencukupi</Jika>
-          <Jika>Kredit prabayar anda cepat habis</Jika>
-          <Jika>Bill bulanan anda terlalu tinggi</Jika>
-          <Jika>Anda ingin menggunakan data tanpa risau</Jika>
+          <Jika>Kuota data bulanan anda tidak mencukupi?</Jika>
+          <Jika>Kredit prabayar anda cepat habis?</Jika>
+          <Jika>Bill bulanan anda terlalu tinggi?</Jika>
+          <Jika>Anda ingin menggunakan data tanpa risau?</Jika>
         </ul>
         {/* <div sx={{ mt: 0 }}>Anda perlukan Pek Jasa hari ini.</div> */}
       </div>

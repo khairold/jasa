@@ -347,7 +347,7 @@ export default () => (
           position: ["relative", "sticky"],
           top: [-42, -42],
           pt: 4,
-          pb: 4,
+          pb: 3,
           bg: "white",
           maxWidth: [340],
           boxSizing: "border-box",
@@ -383,6 +383,19 @@ export default () => (
         </div>
         <CardList />
         <CardButton />
+        <div
+          sx={{
+            textAlign: "center",
+            fontSize: "10px",
+            // fontStyle: "italic",
+            fontWeight: 300,
+            pt: 2,
+            // mt: 2,
+            color: "lightGrey",
+          }}
+        >
+          Tertakluk Terma & Syarat
+        </div>
       </div>
     </div>
   </div>

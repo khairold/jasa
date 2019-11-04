@@ -39,8 +39,15 @@ export default () => (
           lineHeight: [1.2, 1.4],
         }}
       >
-        Tiada risiko untuk anda mencuba sendiri liputan meluas kami dengan
-        melanggan Pek Jasa. Anda tidak terikat dengan sebarang kontrak.
+        Tiada risiko untuk anda mencuba sendiri{" "}
+        <a
+          sx={{ color: "text", textDecoration: "underline" }}
+          href="https://unifi.com.my/unifi-en/personal/home/postpaid-coverage.page"
+        >
+          liputan
+        </a>{" "}
+        meluas kami dengan melanggan Pek Jasa. Anda tidak terikat dengan
+        sebarang kontrak.
         {/* Anda boleh berhubung dari mana-mana sahaja.{" "}
         <br sx={{ display: ["none", "inline"] }} />
         Periksa liputan di{" "}
