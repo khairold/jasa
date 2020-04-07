@@ -42,7 +42,7 @@ export default () => (
         Tiada risiko untuk anda mencuba sendiri{" "}
         <a
           sx={{ color: "text", textDecoration: "underline" }}
-          href="https://unifi.com.my/unifi-en/personal/home/postpaid-coverage.page"
+          href="https://map.unifi.com.my/covrgmobile"
         >
           liputan
         </a>{" "}

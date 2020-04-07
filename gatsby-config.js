@@ -1,9 +1,9 @@
 module.exports = {
-  pathPrefix: `/jasapek2`,
-  // assetPrefix: `/pekjasa`,
+  pathPrefix: `/pekjasa`,
+  // assetPrefix: `/pekjasa/assets`,
   siteMetadata: {
     title: `Pek Jasa unifi Mobile™ | Daftar online`,
-    description: `Pek jasa ialah pelan pasca bayar ekslusif untuk Penjawat Awam dari unifi Mobile™. Tawaran Pek Jasa ciri-ciri ini terhad sehingga 31 Disember 2019.`,
+    description: `Pek jasa ialah pelan pasca bayar ekslusif untuk Penjawat Awam dari unifi Mobile™. Tawaran Pek Jasa ini terhad sehingga 31 Mac 2020.`,
     author: `@unifi`,
   },
   plugins: [

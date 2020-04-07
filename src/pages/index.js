@@ -54,7 +54,7 @@ export default () => {
     <div>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>unifi Pek Jasa</title>
+        <title>Pek Jasa unifi Mobile™ | Daftar online</title>
         <meta
           name="title"
           content="Pek Jasa unifi Mobile™ | Daftar online"
@@ -65,13 +65,18 @@ export default () => {
         ></meta>
         <meta
           name="description"
-          content="Pek jasa ialah pelan pasca bayar ekslusif untuk Penjawat Awam dari unifi Mobile™. Tawaran Pek Jasa ciri-ciri ini terhad sehingga 31 Disember 2019."
+          content="Pek jasa ialah pelan pasca bayar ekslusif untuk Penjawat Awam dari unifi Mobile™. Tawaran Pek Jasa ini terhad sehingga 31 Mac 2020."
         ></meta>
         <script
           type="text/javascript"
           src="/lsds/assets/js/common/analytics.js"
           data-tg-desktop_or_tablet_or_phone="show"
         ></script>
+        {/* <link
+          rel="preload"
+          href="https://map.unifi.com.my/newco/js/covrgtemp/fdd_coverage_temp.js"
+          as="script"
+        /> */}
       </Helmet>
       <Header />
       <Card />

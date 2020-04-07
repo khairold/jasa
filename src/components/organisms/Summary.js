@@ -93,7 +93,7 @@ export default () => (
         >
           Tawaran sah jika anda <br sx={{ display: ["inline"] }} />
           melanggan sebelum <br sx={{ display: ["inline"] }} />
-          31 Disember 2019
+          31 Mac 2020
         </div>
         <DaftarSekarang display={["none", "block"]} />
       </div>
